@@ -40,6 +40,7 @@ plugins:
 site_name: idlepig
 copyright: Copyright &copy; 2019-2022 idlepig
 # GitHub Specific Configuration.
-repo_name: blog
+#repo_name: blog
 repo_url: https://github.com/idlepig/blog
-edit_uri: edit/master/docs/user_guide/docs/
+edit_uri: blob/main/docs/
+
