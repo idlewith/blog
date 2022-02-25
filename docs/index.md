@@ -1,6 +1,6 @@
 
 
-# blog by idlepig
+# IdlePig
 
 [mac os settings](apple.md)
 
