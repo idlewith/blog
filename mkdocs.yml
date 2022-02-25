@@ -1,7 +1,7 @@
 # Set strict to true to turn warnings into errors to catch warnings within CI.
 strict: true
 theme:
-  name: readthedocs
+  name: material
   # By default, fonts are pulled from Google on the Internet. To support offline usage, this is
   # disabled.
   font: false
@@ -29,7 +29,8 @@ extra:
 # This is needed to allow links to work when opened from the file system.
 use_directory_urls: false
 plugins:
-  - search
+    - search
+    - mermaid2
   # This plugin is used to validate URLs (including some anchors).
   # Uncomment to build the docs with this validation enabled.
   # This is commented out by default because this requires network I/O to validate URLs, so it is
