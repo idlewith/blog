@@ -1,7 +1,7 @@
 # Set strict to true to turn warnings into errors to catch warnings within CI.
 strict: true
 theme:
-  name: windmill
+  name: readthedocs
   # By default, fonts are pulled from Google on the Internet. To support offline usage, this is
   # disabled.
   font: false
