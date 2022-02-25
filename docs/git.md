@@ -51,7 +51,7 @@ git branch -a
 git checkout -b otfsenter remotes/otfsenter/main
 ```
 
-切换到自己的分支，merge别人的分支
+切换到自己的分支, merge别人的分支
 
 ```bash
 git checkout main
