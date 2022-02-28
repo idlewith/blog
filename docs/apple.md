@@ -5,58 +5,66 @@
 ## ss-local
 
 
+set shortcuts for command which turn on proxy auto discovery
 
-cd ~/Library/Application Support/ShadowsocksX-NG-R8
+open automator.app
 
-rm ss-local
+select quickly operation
 
-vi ss-local
+select "run shell script" Application
 
-```bash
-#!/bin/zsh
+add below command
 
-~/Library/Application Support/ShadowsocksX-NG-R8/ss-local-2.5.6.12.static/ss-local
+```
 networksetup -setproxyautodiscovery USB\ 10/100/1000\ LAN on
 ```
 
-chmod +x ss-local
+type command + s
+
+naming to ss-proxy
+
+open system settings, select keyboard, shortcuts, services, common, assign shortcuts for ss-proxy
 
 
 
-
-setup auto proxy enable on command
+**setup auto proxy enable on command**
 
 ```
 networksetup -setproxyautodiscovery USB\ 10/100/1000\ LAN on
 networksetup -setproxyautodiscovery USB\ 10/100/1000\ LAN off
 ```
 
+**shadowsocks path**
+
+~/Library/Application Support/ShadowsocksX-NG-R8
 
 
+**install shadowsocks library**
+
+```
+brew install shadowsocks-libev v2ray-plugin
+```
 
 To restart shadowsocks-libev after an upgrade:
-  brew services restart shadowsocks-libev
+
+```
+brew services restart shadowsocks-libev
+```
+
 Or, if you don't want/need a background service you can just run:
-  /usr/local/opt/shadowsocks-libev/bin/ss-local -c /usr/local/etc/shadowsocks-libev.json
+
+```
+/usr/local/opt/shadowsocks-libev/bin/ss-local -c /usr/local/etc/shadowsocks-libev.json
+```
 
 
-brew install shadowsocks-libev v2ray-plugin
-
-## Then copy binaries to the App
-
-cp -f /usr/local/opt/shadowsocks-libev/bin/ss-local  /Applications/ShadowsocksX-NG.app/Contents/Resources/ss-local
-cp -f /usr/local/opt/v2ray/bin/v2ray  /Applications/ShadowsocksX-NG.app/Contents/Resources/v2ray-plugin
-
-## And remove quarantine attribute to allow run binary
-
-sudo xattr -d com.apple.quarantine '/Applications/ShadowsocksX-NG.app/Contents/Resources/v2ray-plugin'
-
-
-view process of shadowsocks
+**view process of shadowsocks**
 
 ```
 lsof -iTCP -sTCP:LISTEN -n -P
 ```
+
+output
 
 ```
 COMMAND     PID         USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
@@ -66,36 +74,24 @@ ss-local  75261 zhouxinzheng    6u  IPv4 0xd38e381a2851e505      0t0  TCP 127.0.
 privoxy   75265 zhouxinzheng    3u  IPv4 0xd38e381a284d0505      0t0  TCP 127.0.0.1:1087 (LISTEN)
 ```
 
-check whether turn traffic
+**check whether turn on traffic**
 
 ```
 curl --socks5 127.0.0.1:1086 http://cip.cc
 ```
 
-```
-IP	: 103.137.63.129
-地址	: 亚太地区  亚太地区
 
-数据二	: 台湾省 | 彼得巧科技企业社
-
-数据三	: 巴基斯坦
-
-URL	: http://www.cip.cc/103.137.63.129
-```
-
-command list for get proxy settings 
-
+**command list for get proxy settings**
 
 ```
-$ system_profiler SPNetworkDataType # 获取完整网络配置信息
-
-$ networksetup -listallnetworkservices # 列举所有网络设备
-$ networksetup -getwebproxy Wi-Fi # 获取特定网络设备的系统代理配置
+$ system_profiler SPNetworkDataType # get whole network config
+$ networksetup -listallnetworkservices # list all network device
+$ networksetup -getwebproxy Wi-Fi # get system proxy config of special network device
 
 ```
 
 
-change terminal proxy automatically for mac
+**change terminal proxy automatically for mac**
 
 ```
 #!/bin/zsh
@@ -152,26 +148,14 @@ fi
 
 
 
-
-## doing-设置terminal代理
-
-打开ss之后，通过代理访问google
-
-http_proxy=http://localhost:1087 curl -I http://google.com
-
-
 ## minikube mirrors
 
 minikube start --image-mirror-country=cn   --iso-url=https://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/iso/minikube-v1.6.2.iso  --registry-mirror=https://mhzm7ggy.mirror.aliyuncs.com  --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
 
 
 
+## set mirrors for brew
 
-
-
-## 更换brew镜像
-
-科大真香实例：
 
 ```bash
 git -C "$(brew --repo)" remote set-url origin https://mirrors.ustc.edu.cn/brew.git
@@ -180,11 +164,11 @@ git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc
 
 git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
 
-if [ $SHELL = "/bin/bash" ] # 如果你的是bash
+if [ $SHELL = "/bin/bash" ] 
 then 
     echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/' >> ~/.bash_profile
     source ~/.bash_profile
-elif [ $SHELL = "/bin/zsh" ] # 如果用的shell 是zsh 的话
+elif [ $SHELL = "/bin/zsh" ]
 then
     echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/' >> ~/.zshrc
     source ~/.zshrc
@@ -193,7 +177,7 @@ fi
 brew update
 ```
 
-如果需要恢复原有镜像源的话（国内镜像源突然不能用了或版本不够新）
+**restore to origin mirror**
 
 ```bash
 git -C "$(brew --repo)" remote set-url origin https://github.com/Homebrew/brew.git
@@ -202,12 +186,14 @@ git -C "$(brew --repo homebrew/core)" remote set-url origin https://github.com/H
 
 git -C "$(brew --repo homebrew/cask)" remote set-url origin https://github.com/Homebrew/homebrew-cask.git
 
-# 找到 ~/.bash_profile 或者 ~/.zshrc 中的HOMEBREW_BOTTLE_DOMAIN 一行删除
+
+# delete the whole line contains HOMEBREW_BOTTLE_DOMAIN in ~/.bash_profile or ~/.zshrc
 
 brew update
 ```
 
-如果不行的话可以依次尝试以下命令
+
+you can try commands below one by one if invalid
 
 ```bash
 brew doctor
@@ -216,7 +202,7 @@ brew update
 ```
 
 
-## Hide your computer name in ZSH/BASH
+## hide your computer name in ZSH/BASH
 
 vim .zshrc
 
@@ -224,51 +210,34 @@ vim .zshrc
 export PS1="[~]$ "; clear;
 ```
 
-## 关闭登陆界面多个用户登陆
+## close multiple users in login page
 
 
 ```bash
 sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWOTHERUSERS_MANAGED -bool FALSE
 ```
 
-## 强开随航
+## open sidecar by force
 
 ```bash
 defaults write com.apple.sidecar.display AllowAllDevices -bool true
 defaults write com.apple.sidecar.display hasShownPref -bool true
 ```
 
-## 环境变量配置
 
-因为terminal每次只会加载.zshrc，所以必须要在.zshrc里面写alias和环境变量，才会每次重启终端生效配置
-
-初始化的配置
-
-```bash
-alias t="ssh root@idlepig.cn"
-alias ll="ls -l"
-alias idlepig="cd /Users/username/docs/idlepig/source; source /Users/username/code/idlepig/bin/activate"
-
-export PATH=/Users/username/code/idlepig/bin:/Users/username/Library/Python/3.8/bin:$PATH
-```
-
-
-
-## 苹果 电源适配器延长线缆
-
+## apple power adapter extension string
 
 https://www.apple.com.cn/shop/product/MK122CH/A
 
 
-## 调整鼠标速度
+
+## set mouse spped
 
 ```bash
 defaults write -g com.apple.mouse.scaling 18
 ```
 
-terminal输入然后重启，已爽死，嫌快的调小数值就行
-
-还有滚轮速度
+wheel speed
 
 ```bash
 defaults write -g com.apple.scrollwheel.scaling 1.2
