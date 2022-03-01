@@ -4,26 +4,53 @@
 
 ## ss-local
 
+the whole flow
 
-set shortcuts for command which turn on proxy auto discovery
+```mermaid
+flowchart TD
+A(start) --> B[set shortcuts for ss]
+B --> C[edit auto_proxy.sh]
+C --> D[set automator.app]
+D --> E[set shortcuts for workflow]
+E --> F(end)
+```
+
+
+set shortcuts for command which turn on proxy auto discovery, to command control shift "a"
+
+vi ~/auto_proxy.sh
+
+```
+#!/bin/bash
+
+networksetup -setproxyautodiscovery USB\ 10/100/1000\ LAN on
+```
+
+chmod +x auto_proxy.sh
 
 open automator.app
 
 select quickly operation
 
-select "run shell script" Application
+select "run AppleScript" Application
+
+no input
 
 add below command
 
 ```
-networksetup -setproxyautodiscovery USB\ 10/100/1000\ LAN on
+tell application "System Events"
+	keystroke "a" using {command down, shift down, control down}
+	delay 1
+	do shell script "/bin/bash ~/auto_proxy.sh"
+end tell
 ```
 
 type command + s
 
 naming to ss-proxy
 
-open system settings, select keyboard, shortcuts, services, common, assign shortcuts for ss-proxy
+open system settings, select keyboard, shortcuts, services, common, assign shortcuts(control command z) for ss-proxy
 
 
 
