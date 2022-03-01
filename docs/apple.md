@@ -53,6 +53,21 @@ naming to ss-proxy
 open system settings, select keyboard, shortcuts, services, common, assign shortcuts(control command z) for ss-proxy
 
 
+set direct Accessibility privileges
+
+add AppleScript Utility and Automator
+
+To add AppleScript Utility app, click the + button on Accessibility, then navigate to (a shortcut is CMD+SHIFT+G)
+
+```
+/System/Library/CoreServices
+```
+
+then open the application called AppleScript Utility, also need add other applications.
+
+
+
+
 
 **setup auto proxy enable on command**
 
