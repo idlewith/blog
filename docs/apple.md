@@ -110,10 +110,10 @@ output
 
 ```
 COMMAND     PID         USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
-Shadowsoc 65979 zhouxinzheng   11u  IPv4 0xd38e381a21fb3505      0t0  TCP 127.0.0.1:8090 (LISTEN)
-Shadowsoc 65979 zhouxinzheng   12u  IPv6 0xd38e3823bb1a9aad      0t0  TCP [::1]:8090 (LISTEN)
-ss-local  75261 zhouxinzheng    6u  IPv4 0xd38e381a2851e505      0t0  TCP 127.0.0.1:1086 (LISTEN)
-privoxy   75265 zhouxinzheng    3u  IPv4 0xd38e381a284d0505      0t0  TCP 127.0.0.1:1087 (LISTEN)
+Shadowsoc 65979 idlepig   11u  IPv4 0xd38e381a21fb3505      0t0  TCP 127.0.0.1:8090 (LISTEN)
+Shadowsoc 65979 idlepig   12u  IPv6 0xd38e3823bb1a9aad      0t0  TCP [::1]:8090 (LISTEN)
+ss-local  75261 idlepig    6u  IPv4 0xd38e381a2851e505      0t0  TCP 127.0.0.1:1086 (LISTEN)
+privoxy   75265 idlepig    3u  IPv4 0xd38e381a284d0505      0t0  TCP 127.0.0.1:1087 (LISTEN)
 ```
 
 **check whether turn on traffic**
