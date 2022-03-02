@@ -12,7 +12,8 @@ A(start) --> B[set shortcuts for ss]
 B --> C[edit auto_proxy.sh]
 C --> D[set automator.app]
 D --> E[set shortcuts for workflow]
-E --> F(end)
+E --> F[chmod]
+F --> G(end)
 ```
 
 
@@ -64,6 +65,12 @@ To add AppleScript Utility app, click the + button on Accessibility, then naviga
 ```
 
 then open the application called AppleScript Utility, also need add other applications.
+
+chmod 
+
+```
+chmod +x ~/Library/Services/ss-proxy.workflow
+```
 
 
 
