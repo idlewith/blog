@@ -37,12 +37,10 @@ simple version
 
 ```bash
 server {
-       listen 80;
-      server_name _;
-       location / {
-         proxy_pass http://idlepig;
-   
-     }
-   
-     }
-  ```
+    listen 80;
+    server_name _;
+    location / {
+        proxy_pass http://idlepig;
+    }  
+}
+```
