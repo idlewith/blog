@@ -16,3 +16,6 @@ buildozer android debug deploy run
 
 brew install zlib-ng
 
+
+
+
