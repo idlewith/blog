@@ -1,5 +1,9 @@
 # others
 
+## custom css for mpe in markdown
+
+~/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.2/node_modules/@shd101wyy/mume/styles/preview_theme
+
 ## build android apk from kivy and buildozer
 
 ln -s /usr/local/bin/glibtoolize /usr/local/bin/libtoolize
@@ -18,4 +22,17 @@ brew install zlib-ng
 
 
 
+
+## https to http
+
+chrome://net-internals/#hsts
+
+Domain Security Policy
+
+Delete domain security policies
+
+
+input your domain,
+
+then Delete
 

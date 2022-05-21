@@ -2,6 +2,11 @@
 # apple
 
 
+## 移除左右滑动功能
+
+defaults write com.apple.dt.Xcode AppleEnableMouseSwipeNavigateWithScrolls -bool NO
+
+
 ## ss-local
 
 the whole flow
