@@ -4,7 +4,17 @@
 
 ## 移除左右滑动功能
 
+valid
+
+http://magicprefs.com/
+
+invalid
+
+```bash
 defaults write com.apple.dt.Xcode AppleEnableMouseSwipeNavigateWithScrolls -bool NO
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseHorizontalScroll -bool NO
+defaults write .GlobalPreferences com.apple.driver.AppleBluetoothMultitouch.mouse MouseHorizontalScroll -bool NO
+```
 
 
 ## ss-local
