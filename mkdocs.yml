@@ -25,7 +25,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/idlepig/blog
+      link: https://github.com/idlewith/blog
 # This is needed to allow links to work when opened from the file system.
 use_directory_urls: false
 plugins:
@@ -38,9 +38,9 @@ plugins:
   # incorrect URLs.
 #  - htmlproofer:
 #      raise_error: True
-site_name: idlepig
-copyright: Copyright &copy; 2019-2022 idlepig
+site_name: idlewith
+copyright: Copyright &copy; 2019-2022 idlewith
 # GitHub Specific Configuration.
 #repo_name: blog
-repo_url: https://github.com/idlepig/blog
+repo_url: https://github.com/idlewith/blog
 edit_uri: blob/main/docs/

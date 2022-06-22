@@ -21,3 +21,6 @@ Please subscribe me in WeChat official account: pythonscripts.
 **python scripts list**
 
 - [today in history](python_scripts/today_in_history.md)
+
+
+[粤ICP备19052369号-2](https://beian.miit.gov.cn/)
