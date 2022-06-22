@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="img/favicon.ico" rel="shortcut icon"/>
+<title>git - idlewith</title>
+<link href="css/theme.css" rel="stylesheet"/>
+<link href="css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<script>
+        // Current page data
+        var mkdocs_page_name = "git";
+        var mkdocs_page_input_path = "git.md";
+        var mkdocs_page_url = null;
+      </script>
+<script defer="" src="js/jquery-3.6.0.min.js"></script>
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="index.html"> idlewith
+        </a><div role="search">
+<form action="./search.html" class="wy-form" id="rtd-search-form" method="get">
+<input name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="1368.html">1368</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="apple.html">apple</a>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="git.html">git</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#issuemaster">issue分支和master分支冲突</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pull-request">处理别人的pull request</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="go.html">golang</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="linux.html">linux</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mysql.html">mysql</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="nginx.html">nginx</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="others.html">others</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="python.html">deploy</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rasa.html">rasa</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="zabbix.html">zabbix</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Python scripts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="python_scripts/today_in_history.html">today in history</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Source code</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="source_code/init.html">read source code</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="index.html">idlewith</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a alt="Docs" class="icon icon-home" href="index.html"></a> »</li><li>git</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/idlewith/blog/blob/main/docs/git.md"> Edit on GitHub</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="git">git</h1>
+<h2 id="issuemaster">issue分支和master分支冲突</h2>
+<p>先在本地master分支pull issue分支，会自动合并，</p>
+<p>自动合并不了的，才去手动合并</p>
+<p>然后再push到master分支上，github上的冲突会显示ok</p>
+<pre><code class="language-bash">git add .
+git commit --no-edit
+git push origin master
+</code></pre>
+<h2 id="pull-request">处理别人的pull request</h2>
+<p>先添加别人的源</p>
+<pre><code class="language-bash">git remote add otfsenter https://github.com/otfsenter/test_merge.git
+
+</code></pre>
+<p>现在remote有自己的、别人的各种分支</p>
+<pre><code class="language-bash">git remote -v
+</code></pre>
+<p>fetch别人的代码</p>
+<pre><code class="language-bash">git fetch otfsenter
+</code></pre>
+<p>会下载远程的别人的代码</p>
+<p>local的分支有自己的、别人的各种分支</p>
+<pre><code class="language-bash">git branch -a
+</code></pre>
+<p>切换到别人的代码，review或者查看</p>
+<pre><code class="language-bash">git checkout -b otfsenter remotes/otfsenter/main
+</code></pre>
+<p>切换到自己的分支, merge别人的分支</p>
+<pre><code class="language-bash">git checkout main
+git merge otfsenter
+git branch -D otfsenter
+git push
+</code></pre>
+<p>参考资料</p>
+<p>https://liuyib.github.io/2020/09/19/add-commits-to-others-pr/#%E5%9B%BE%E5%BD%A2%E5%8C%96%E6%96%B9%E5%BC%8F</p>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="apple.html" title="apple"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="go.html" title="golang">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+<p>Copyright © 2019-2022 idlewith</p>
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span>
+<a class="fa fa-github" href="https://github.com/idlewith/blog" style="color: #fcfcfc"> GitHub</a>
+</span>
+<span><a href="apple.html" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="go.html" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '.';</script>
+<script defer="" src="js/theme_extra.js"></script>
+<script defer="" src="js/theme.js"></script>
+<script defer="" src="search/main.js"></script>
+<script defer="">
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+</body>
+</html>
