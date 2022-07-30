@@ -20,3 +20,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-material mkdocs-mermaid2-plugin==0.5.2 mkdocs-windmill==1.0.4
       - run: mkdocs gh-deploy --force
+
+on:
+  push:
+    branches: [gh-deploy]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy aliyun oss
+        uses: taixw2/deploy-aliyun-oss@v1
+        with:
+          region: oss-cn-shenzhen.aliyuncs.com
+          access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
+          bucket: ${{ secrets.BUCKET }}
+          secure: true
