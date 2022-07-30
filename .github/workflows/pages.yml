@@ -22,11 +22,12 @@ jobs:
       - run: mkdocs gh-deploy --force
       - run: git checkout gh-pages
       - name: upload files to OSS
-        uses: fangbinwei/aliyun-oss-website-action@master
+        id: upload_to_oss
+        uses: tvrcgo/upload-to-oss@v0.1.1
         with:
-          accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
-          accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
+          key-id: ${{ secrets.ACCESS_KEY_ID }}
+          key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
+          region: oss-cn-shenzhen
           bucket: ${{ secrets.BUCKET }}
-          endpoint: https://idlewith.com
-          # folder in /github/workspace
-          folder: .
+          asset-path: ./
+          target-path: ./
