@@ -28,5 +28,5 @@ jobs:
           key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
           region: oss-cn-shenzhen
           bucket: ${{ secrets.BUCKET }}
-          asset-path: \
-          target-path: \
+          asset-path: /
+          target-path: /
