@@ -22,12 +22,11 @@ jobs:
       - run: mkdocs gh-deploy --force
       - run: git checkout gh-pages
       - name: upload files to OSS
-        id: upload_to_oss
         uses: tvrcgo/upload-to-oss@v0.1.1
         with:
           key-id: ${{ secrets.ACCESS_KEY_ID }}
           key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
           region: oss-cn-shenzhen
           bucket: ${{ secrets.BUCKET }}
-          asset-path: ./
-          target-path: ./
+          asset-path: \
+          target-path: \
