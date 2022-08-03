@@ -4,7 +4,7 @@
 
 ## 移除左右滑动功能
 
-valid
+valid url
 
 http://magicprefs.com/
 
@@ -24,7 +24,7 @@ the whole flow
 ```mermaid
 flowchart TD
 A(start) --> B[set shortcuts for ss]
-B --> C[edit auto_proxy.sh]
+B --> C[edit the auto_proxy.sh]
 C --> D[set automator.app]
 D --> E[set shortcuts for workflow]
 E --> F[chmod]

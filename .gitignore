@@ -26,3 +26,4 @@ site
 *.gv
 *.png
 .DS_Store
+t.sh

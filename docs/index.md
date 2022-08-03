@@ -8,7 +8,7 @@ Please subscribe me in WeChat official account: pythonscripts.
 
 欢迎关注我的微信公众号: Python脚本.
 
-**mac os**
+**mac OS**
 
 - [mac os settings](apple.md)
 
