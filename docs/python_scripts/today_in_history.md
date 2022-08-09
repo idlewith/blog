@@ -9,4 +9,5 @@ flowchart TD
     C --> E[read data from api]
     D --> F(End)
     E --> F
+classDef default fill:#fff,stroke:#000
 ```
