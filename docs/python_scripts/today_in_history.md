@@ -1,7 +1,7 @@
 # today in history
 
 ```mermaid
-flowchart TD
+graph TD
 
     A(Start) --> B[generate today json file]
     B --> C{is today file exist}
