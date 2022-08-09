@@ -51,6 +51,8 @@ def main():
     file_path_list = walk_site()
     for local_oss_dir in file_path_list:
         local_dir, oss_dir = local_oss_dir
+        print(f'local file path: {local_dir}')
+        print(f'oss file path: {oss_dir}')
         upload_file(local_dir, oss_dir)
 
 
