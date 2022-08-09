@@ -21,10 +21,9 @@ bucket = oss2.Bucket(auth, 'https://oss-cn-shenzhen.aliyuncs.com', 'idlewith')
 
 # 必须以二进制的方式打开文件。
 # 填写本地文件的完整路径。如果未指定本地路径，则默认从示例程序所属项目对应本地路径中上传文件。
-def upload_file(file_path):
-    file_name = file_path.strip().rsplit('/', 1)[-1]
-    with open(file_path, 'rb') as file_obj:
-        bucket.put_object(file_name, file_obj)
+def upload_file(local_dir, oss_dir):
+    with open(local_dir, 'rb') as file_obj:
+        bucket.put_object(oss_dir, file_obj)
 
 
 def walk_site():
@@ -34,16 +33,25 @@ def walk_site():
 
     f = []
     for dir_path, dir_names, filenames in os.walk(site_dir):
+
+        relative_path_list = dir_path.replace(site_dir, '').split('/', 1)
+        if len(relative_path_list) > 1:
+            relative_path = relative_path_list[1]
+        else:
+            relative_path = ''
+
         for filename in filenames:
             filename_dir = os.path.join(dir_path, filename)
-            f.append(filename_dir)
+            oss_filename_dir = os.path.join(relative_path, filename)
+            f.append([filename_dir, oss_filename_dir])
     return f
 
 
 def main():
     file_path_list = walk_site()
-    for filename in file_path_list:
-        upload_file(filename)
+    for local_oss_dir in file_path_list:
+        local_dir, oss_dir = local_oss_dir
+        upload_file(local_dir, oss_dir)
 
 
 if __name__ == '__main__':
