@@ -1,3 +1,57 @@
+
+# poetry
+
+
+```shell
+
+pip install poetry
+poetry new --src project
+cd project
+poetry install
+```
+
+install third modules
+
+```shell
+poetry add requests
+```
+
+# pyenv
+
+Pre-requisites
+
+```shell
+sudo dnf groupinstall -y "Development Tools"
+sudo dnf install -y zlib zlib-devel bzip2-devel openssl-devel sqlite-devel readline-devel git
+```
+
+Installation
+
+```shell
+curl https://pyenv.run | bash
+```
+
+Update your shell environment, I am using zsh.
+
+```
+# ~/.zshrc
+
+# PYENV
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+# PYENV Auto-completions. This should be towards the end of the file.
+eval "$(pyenv init -)"
+```
+
+
+- [ ] install clash
+
+
+https://luckyfuture.top/config-clash-on-linux#%E5%AE%89%E8%A3%85clash
+
+
+
 # deploy
 
 pex buildout, bazel 都做了类似 jar包的操作
