@@ -10,17 +10,20 @@ Please subscribe me in WeChat official account: pythonscripts.
 
 **mac OS**
 
-- [mac os settings](apple.md)
+- [mac os settings](others/apple.md)
 
 **linux**
 
-- [Git](git.md)
-- [Zabbix](zabbix.md)
-- [MySQL](mysql.md)
+- [Zabbix](linux/zabbix.md)
+- [MySQL](linux/mysql.md)
 
 **python scripts list**
 
-- [today in history](python_scripts/today_in_history.md)
+- [today in history](python/today_in_history.md)
+
+**Project**
+
+- [git](project/git.md)
 
 
-[粤ICP备19052369号-3](https://beian.miit.gov.cn/)
+

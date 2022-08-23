@@ -1,35 +1,56 @@
 # Set strict to true to turn warnings into errors to catch warnings within CI.
 strict: true
 theme:
-  name: readthedocs
+  name: material
   # By default, fonts are pulled from Google on the Internet. To support offline usage, this is
   # disabled.
   font: false
   palette:
-    scheme: default
-    primary: white
-    accent: white
+    # Toggle light mode
+    - scheme: default
+      primary: white
+      accent: white
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Toggle dark mode
+    - scheme: slate
+      primary: black
+      accent: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
   icon:
     logo: material/math-integral-box
     # GitHub specific.
     repo: fontawesome/brands/github
-  favicon: https://idlepig.coding.net/p/image/d/image/git/raw/master/1645453787343.jpg
   features:
     - content.code.annotate
     - navigation.tracking
+    - navigation.tabs
     - search.highlight
     - search.share
     - search.suggest
+    - toc.integrate
 markdown_extensions:
   - admonition
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/idlewith/blog
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:newellzhou@163.com
+  generator: false
+  disqus: idlewith
 # This is needed to allow links to work when opened from the file system.
 use_directory_urls: false
 plugins:
-    - search
+    - search:
+        lang:
+          - en
+          - ja
+        separator: '[\s\-\.]+'
     - mermaid2
   # This plugin is used to validate URLs (including some anchors).
   # Uncomment to build the docs with this validation enabled.
@@ -39,8 +60,9 @@ plugins:
 #  - htmlproofer:
 #      raise_error: True
 site_name: idlewith
-copyright: Copyright &copy; 2019-2022 idlewith
+copyright: Copyright &copy; 2019-2022 idlewith <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19052369号-3</a>
 # GitHub Specific Configuration.
 #repo_name: blog
 repo_url: https://github.com/idlewith/blog
 edit_uri: blob/main/docs/
+site_url: https://idlewith.com
