@@ -22,14 +22,14 @@ defaults write .GlobalPreferences com.apple.driver.AppleBluetoothMultitouch.mous
 the whole flow
 
 ```mermaid
+%%{init: {'theme':'neutral'}}%%
 graph TD
-    A(start) --> B[set shortcuts for ss]
-    B --> C[edit the auto_proxy.sh]
-    C --> D[set automator.app]
-    D --> E[set shortcuts for workflow]
-    E --> F[chmod]
-    F --> G(end)
-classDef default fill:#fff,stroke:#000
+A(start) --> B[set shortcuts for ss]
+B --> C[edit the auto_proxy.sh]
+C --> D[set automator.app]
+D --> E[set shortcuts for workflow]
+E --> F[chmod]
+F --> G(end)
 ```
 
 
