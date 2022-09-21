@@ -63,3 +63,12 @@ git push
 参考资料
 
 https://liuyib.github.io/2020/09/19/add-commits-to-others-pr/#%E5%9B%BE%E5%BD%A2%E5%8C%96%E6%96%B9%E5%BC%8F
+
+
+## set http proxy
+
+```
+set HTTP_PROXY=http://127.0.0.1:7890/
+set HTTPS_PROXY=http://127.0.0.1:7890/
+set ALL_PROXY=http://127.0.0.1:7890/
+```
