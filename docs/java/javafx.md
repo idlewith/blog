@@ -53,7 +53,7 @@ https://sourceforge.net/projects/launch4j/files/
 
 launch4j parameter
 
-C:\code\demo1\out
+C:\code\demo1\out.exe
 
 C:\Users\new\IdeaProjects\demo\out\artifacts\demo_jar\demo.jar
 
@@ -65,3 +65,17 @@ save the configuration
 click gear icon(settings) to generate exe file
 
 
+launch4j need jre ??????
+
+
+
+
+software to zip jar to exe
+
+
+
+https://jrsoftware.org/isdl.php
+
+inno setup compiler
+
+create a new script file  using the scripts wizard
