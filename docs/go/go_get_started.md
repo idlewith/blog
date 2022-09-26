@@ -99,6 +99,8 @@ GOOS=darwin GOARCH=amd64 go build -o bin/app-amd64-darwin app.go
 
 GOOS=darwin GOARCH=386 go build -o bin/app-386-darwin app.go
 
+after build, rename app to app.app, app.app will not open console
+
 
 # linux
 
