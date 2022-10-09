@@ -2,6 +2,14 @@
 # apple
 
 
+## get process id from port
+
+
+```
+sudo lsof -i -P | grep LISTEN | grep :8080
+```
+
+
 ## 移除左右滑动功能
 
 valid url
