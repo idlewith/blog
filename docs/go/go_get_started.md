@@ -6,6 +6,10 @@
 brew install go
 
 
+cd ~/go
+
+make sure `bin`, `pkg` and `src` 3 paths in `~/go`, create dir if not exists
+
 vim ~/.zshrc
 
 ```
@@ -14,6 +18,18 @@ export GOROOT=/usr/local/go
 PATH="${GOPATH}/bin:${PATH}"
 export PATH
 ```
+
+
+mkdir a new project like `~/go/src/demoProject`
+
+then execute command `go mod init demoProject`
+
+using install instead of get in command, like `go get ...`, please use `go install ....`
+
+then it will download exe file in `~/go/bin`
+
+
+
 
 # windows
 
