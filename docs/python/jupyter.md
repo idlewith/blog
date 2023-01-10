@@ -1,4 +1,6 @@
-# to html
+# jupyter
+
+## to html
 
 
 ```python
@@ -29,7 +31,7 @@ HTML(ani.to_jshtml())
 ```
 
 
-# to video
+## to video
 
 ```python
 from matplotlib import animation

@@ -74,14 +74,39 @@ manim -pqk --format=gif main.py CreateCircle
 ```
 
 
-local config file
+install mactex
 
 
-must be `manim.cfg`
+brew install --cask mactex
 
+
+unset HOMEBREW_BREW_GIT_REMOTE
+git -C "$(brew --repo)" remote set-url origin https://github.com/Homebrew/brew
+
+
+## No module named '_lzma' 
+
+CFLAGS="-I$(brew --prefix xz)/include" LDFLAGS="-L$(brew --prefix xz)/lib" pyenv install 3.9.7
+
+
+## merge srt
 
 ```
-[CLI]
-preview=True
-quality=k
+ffmpeg -i in.mp4 -vf subtitles=in.srt out.mp4
 ```
+
+
+ffmpeg -i 20230110.mp4 -vf subtitles=20230110.srt 20230110_output.mp4
+
+
+
+## manim options
+
+disable_caching=True
+
+
+
+
+## azure voicer
+
+https://voiceover.manim.community/en/stable/services.html#azureservice
