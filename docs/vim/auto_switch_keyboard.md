@@ -18,7 +18,7 @@ Auto Switch Input Method: Switch IMCmd
 /usr/local/bin/im-select {im} && /usr/local/bin/im-select com.apple.keylayout.ABC
 ```
 
-# windows
+### windows
 
 
 Auto Switch Input Method: Obtain IMCmd
