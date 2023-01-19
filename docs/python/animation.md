@@ -91,12 +91,18 @@ CFLAGS="-I$(brew --prefix xz)/include" LDFLAGS="-L$(brew --prefix xz)/lib" pyenv
 
 ## merge srt
 
+simple
+
 ```
 ffmpeg -i in.mp4 -vf subtitles=in.srt out.mp4
 ```
 
+complex
 
-ffmpeg -i 20230110.mp4 -vf subtitles=20230110.srt 20230110_output.mp4
+```
+ffmpeg -i "NewsDemo.mp4" -lavfi "subtitles=NewsDemo.srt:force_style='Alignment=2,OutlineColour=&H100000000,BorderStyle=3,Outline=1,Shadow=0,Fontsize=24,MarginV=5'" -crf 1 -c:a copy   "NewsDemo_output.mp4"
+```
+
 
 
 
@@ -110,3 +116,5 @@ disable_caching=True
 ## azure voicer
 
 https://voiceover.manim.community/en/stable/services.html#azureservice
+
+max letter number: 25
