@@ -17,6 +17,10 @@ export http_proxy=http://127.0.0.1:7890
 export all_proxy=socks5://127.0.0.1:7890
 ```
 
+unset https_proxy
+unset http_proxy
+unset all_proxy
+
 
 windows
 
