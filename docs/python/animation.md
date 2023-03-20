@@ -18,6 +18,13 @@ export all_proxy=socks5://127.0.0.1:7890
 ```
 
 
+windows
+
+set https_proxy=http://127.0.0.1:7890
+set http_proxy=http://127.0.0.1:7890
+set all_proxy=socks5://127.0.0.1:7890
+
+
 使用 homebrew 安装 ffmpeg 和 pango
 
 ```
