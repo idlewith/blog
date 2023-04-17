@@ -60,7 +60,7 @@ plugins:
 #  - htmlproofer:
 #      raise_error: True
 site_name: idlewith
-copyright: Copyright &copy; 2019-2022 idlewith <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19052369号-3</a>
+copyright: Copyright &copy; 2019-2023 idlewith <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19052369号-3</a>
 # GitHub Specific Configuration.
 #repo_name: blog
 repo_url: https://github.com/idlewith/blog
