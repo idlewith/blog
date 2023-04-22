@@ -27,3 +27,4 @@ site
 *.png
 .DS_Store
 t.sh
+nohup.out
