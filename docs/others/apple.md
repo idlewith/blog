@@ -2,6 +2,16 @@
 # apple
 
 
+## 加快光标移动速度
+
+
+```
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+```
+
+
 ## get process id from port
 
 
