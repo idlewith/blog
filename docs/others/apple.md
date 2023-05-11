@@ -1,6 +1,13 @@
 
 # apple
 
+## 连续按键
+
+
+```
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -boolean false
+defaults write -g ApplePressAndHoldEnabled -boolfalse
+```
 
 ## 加快光标移动速度
 
@@ -10,6 +17,16 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 ```
+
+恢复默认
+
+
+```
+defaults delete NSGlobalDomain KeyRepeat
+defaults delete NSGlobalDomain InitialKeyRepeat
+```
+
+
 
 
 ## get process id from port
