@@ -1,6 +1,14 @@
 
 # apple
 
+## 禁用左右移动
+
+
+defaults write com.apple.AppleMultitouchMouse MouseHorizontalScroll -bool NO
+defaults write com.apple.AppleMultitouchMouse MouseRightClickSwipe -bool NO
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseHorizo​​ntalScroll -bool NO
+
+
 ## 连续按键
 
 
