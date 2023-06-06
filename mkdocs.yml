@@ -32,7 +32,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-    - toc.integrate
+    - navigation.top
 markdown_extensions:
   - admonition
 extra:
@@ -65,3 +65,5 @@ copyright: Copyright &copy; 2019-2023 idlewith <a href="https://beian.miit.gov.c
 #repo_name: blog
 repo_url: https://github.com/idlewith/blog
 edit_uri: blob/main/docs/
+extra_css:
+  - stylesheets/extra.css
