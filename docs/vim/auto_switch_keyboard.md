@@ -1,5 +1,9 @@
 # auto switch keyboard
 
+## vim
+
+smartim.vim
+
 ## vscode
 
 
