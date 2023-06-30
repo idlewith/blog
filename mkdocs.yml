@@ -43,6 +43,9 @@ extra:
       link: mailto:newellzhou@163.com
   generator: false
   disqus: idlewith
+  analytics:
+    provider: google
+    property: G-BSM6TC72LX
 # This is needed to allow links to work when opened from the file system.
 use_directory_urls: false
 plugins:
