@@ -5,13 +5,13 @@
 
 - Paste Image: Base Path
 
-1. 
+1 
 
 ```
 ${currentFileDir}
 ```
 
-2. 
+2 
 
 ```
 ${projectRoot}/static
@@ -32,13 +32,13 @@ fullPath
 
 - Paste Image: Insert Pattern
 
-1. 
+1 
 
 ```
 ${imageSyntaxPrefix}${imageFilePath}${imageSyntaxSuffix}
 ```
 
-2. 
+2 
 
 ```
 ${imageSyntaxPrefix}/${imageFileName}${imageSyntaxSuffix}
@@ -50,13 +50,13 @@ mk-
 
 - PasteImage: Path
 
-1. 
+1 
 
 ```
 ${currentFileDir}/assets/${currentFileNameWithoutExt}
 ```
 
-2. 
+2 
 
 ```
 ${projectRoot}/static
