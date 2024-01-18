@@ -1,5 +1,38 @@
 # git
 
+
+## cannot git push and clone
+
+error keyword
+
+```
+kex_exchange_identification: Connection closed by remote host
+```
+
+
+solve solution
+
+vi ~/.ssh/config
+
+```
+Host github.com
+    Hostname ssh.github.com
+    Port 443
+    User git
+```
+
+
+then execute blew command
+
+```
+ssh -T git@github.com
+```
+
+then, it ok
+
+
+
+
 ## issue分支和master分支冲突
 
 先在本地master分支pull issue分支，会自动合并，
