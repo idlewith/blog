@@ -1,6 +1,31 @@
 
 # apple
 
+
+## migrate wechat history
+
+
+use mac share wifi
+
+
+in **share** which in system settings
+
+
+first, close internet share
+
+
+then, select Belkin USB-C LAN
+
+then, select Wi-Fi
+
+then, Wi-Fi Settings, set wifi name and password
+
+then, use your phone connect this wifi
+
+finally, you can migrate wechat history
+
+
+
 ## 禁用左右移动
 
 
