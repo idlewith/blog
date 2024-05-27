@@ -100,8 +100,32 @@ https://liuyib.github.io/2020/09/19/add-commits-to-others-pr/#%E5%9B%BE%E5%BD%A2
 
 ## set http proxy
 
+windows paths
+
 ```
 set HTTP_PROXY=http://127.0.0.1:7890/
 set HTTPS_PROXY=http://127.0.0.1:7890/
 set ALL_PROXY=http://127.0.0.1:7890/
+```
+
+linux or macos paths
+
+```
+export HTTP_PROXY=http://127.0.0.1:7890
+export HTTPS_PROXY=http://127.0.0.1:7890
+export ALL_PROXY=http://127.0.0.1:7890/
+```
+
+
+
+npm
+
+```
+npm config list
+
+npm config set proxy http://127.0.0.1:7890
+npm config set https-proxy http://127.0.0.1:7890
+
+npm config delete proxy
+npm config delete https-proxy
 ```
