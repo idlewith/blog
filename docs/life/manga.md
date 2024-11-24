@@ -1,6 +1,6 @@
 # Manga
 
-# extract picture from mobi
+# extract image from mobi
 
 before execute command, build virtualenv first, below is demo:
 
@@ -20,10 +20,28 @@ pip install mobi
 mobiunpack 1.mobi .
 ```
 
-## extract picture from epub
+## extract image from epub
 
 ```
 pip install epub-extractor
 epub-extract-jpeg 1.epub
 ```
+
+## extract image from pdf
+
+
+```
+pip install wheel
+pkg install libjpeg-turbo
+LDFLAGS="-L/system/lib64/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install Pillow
+
+pkg install poppler
+
+pip install poppler-utils
+pip install pdf2image
+pip install pdf2image-cli
+
+pdf2image mu.pdf --output mu
+```
+
 
