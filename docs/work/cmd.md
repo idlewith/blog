@@ -1,4 +1,33 @@
 
+# edit with ndd
+
+## add
+
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\OpenWithNdd]
+@="Edit with Ndd"
+
+[HKEY_CLASSES_ROOT\*\shell\OpenWithNdd\command]
+@="\"C:\\path\\to\\ndd.exe\" \"%1\""
+```
+
+
+## remove
+
+```
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\*\shell\OpenWithNdd]
+
+[-HKEY_CLASSES_ROOT\txtfile\shell\OpenWithNdd]
+
+```
+
+
+
+
 # cmd
 
 
