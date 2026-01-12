@@ -1,6 +1,6 @@
 # mysql
 
-## 修改MySQL数据库的编码
+## modify MySQL database encoding
   
 ```bash
 alter database blog character set utf8 collate utf8_general_ci;
