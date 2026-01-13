@@ -35,4 +35,9 @@ https://github.com/idlewith/vimrc/blob/main/vimrc
 ```
 
 
+**create shortcuts on desktop**
+
+```
+"C:\Program Files (x86)\Vim\vim91\gvim.exe" C:\Users\new\Desktop\1.txt
+```
 
