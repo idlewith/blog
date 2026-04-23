@@ -1,4 +1,4 @@
-# Depending different virtual environment in pycharm external tools
+# merge functions
 
 python version: python 3.9.7
 
