@@ -1,0 +1,2469 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="0_preface.html" rel="prev"/>
+<link href="2_part2.html" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<title>上篇 为什么只需要 1368 个单词？ - idlewith</title>
+<link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-BSM6TC72LX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-BSM6TC72LX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-BSM6TC72LX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+</head>
+<body data-md-color-accent="white" data-md-color-primary="white" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#1368">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="idlewith" class="md-header__button md-logo" data-md-component="logo" href="../../index.html" title="idlewith">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-3.1 3.9s-.7-.3-1-.3c-.6-.1-1 .1-1.2 1.1L12 16.8c-.2.8-.5 1.4-1 1.8-.4.3-.8.4-1.3.4-.8 0-2-.5-2-.5l.5-1.4s.8.3 1 .3c.3.1.5 0 .7-.1s.3-.4.4-.7l1.6-9.2c.1-.8.5-1.4 1-1.9.6-.4 1.3-.5 2.1-.4.7.1 1.5.5 1.5.5z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            idlewith
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              上篇 为什么只需要 1368 个单词？
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="white" data-md-color-media="" data-md-color-primary="white" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="black" data-md-color-media="" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/idlewith/blog" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../index.html">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../aliyun/oss.html">
+          
+  
+  
+  Aliyun
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../c%2B%2B/qt.html">
+          
+  
+  
+  C++
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="0_preface.html">
+          
+  
+  
+  English
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../go/cross_build.html">
+          
+  
+  
+  Go
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../interview/index.html">
+          
+  
+  
+  Interview
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../java/java2exe.html">
+          
+  
+  
+  Java
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../life/android.html">
+          
+  
+  
+  Life
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../linux/common_scripts.html">
+          
+  
+  
+  Linux
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../open_source/aria2c.html">
+          
+  
+  
+  Open source
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../pycharm/black.html">
+          
+  
+  
+  Pycharm
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../python/animation.html">
+          
+  
+  
+  Python
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../vim/auto_switch_keyboard.html">
+          
+  
+  
+  Vim
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../vsocde/plugin.html">
+          
+  
+  
+  Vsocde
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../work/ahk.html">
+          
+  
+  
+  Work
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="idlewith" class="md-nav__button md-logo" data-md-component="logo" href="../../index.html" title="idlewith">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-3.1 3.9s-.7-.3-1-.3c-.6-.1-1 .1-1.2 1.1L12 16.8c-.2.8-.5 1.4-1 1.8-.4.3-.8.4-1.3.4-.8 0-2-.5-2-.5l.5-1.4s.8.3 1 .3c.3.1.5 0 .7-.1s.3-.4.4-.7l1.6-9.2c.1-.8.5-1.4 1-1.9.6-.4 1.3-.5 2.1-.4.7.1 1.5.5 1.5.5z"></path></svg>
+</a>
+    idlewith
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/idlewith/blog" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../index.html">
+<span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Aliyun
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Aliyun
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aliyun/oss.html">
+<span class="md-ellipsis">
+    
+  
+    OSS(Object Storage Service) -- 对象存储
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    C++
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    C++
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../c%2B%2B/qt.html">
+<span class="md-ellipsis">
+    
+  
+    qt
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    English
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    English
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    1368
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    1368
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="0_preface.html">
+<span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    上篇 为什么只需要 1368 个单词？
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="1_part1.html">
+<span class="md-ellipsis">
+    
+  
+    上篇 为什么只需要 1368 个单词？
+  
+
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1368_1">
+<span class="md-ellipsis">
+      
+        如何解决 1368 个单词外的表达问题？
+      
+    </span>
+</a>
+<nav aria-label="如何解决 1368 个单词外的表达问题？" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#skill-one">
+<span class="md-ellipsis">
+      
+        Skill One 挑个大的
+      
+    </span>
+</a>
+<nav aria-label="Skill One 挑个大的" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        英语就像一棵大杨树
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        一个顶一百个
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#think">
+<span class="md-ellipsis">
+      
+        think 有很多种
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feeling">
+<span class="md-ellipsis">
+      
+        有感觉的都是 feeling
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bad">
+<span class="md-ellipsis">
+      
+        bad 不都是“坏”的意思
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#skill-two">
+<span class="md-ellipsis">
+      
+        Skill Two 拣实心的
+      
+    </span>
+</a>
+<nav aria-label="Skill Two 拣实心的" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        “重要”有四种说法
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#size">
+<span class="md-ellipsis">
+      
+        size 不光是尺寸的意思
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#skill-three">
+<span class="md-ellipsis">
+      
+        Skill Three 捏软乎的
+      
+    </span>
+</a>
+<nav aria-label="Skill Three 捏软乎的" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        正着不会反着说
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        我不会说你来说
+      
+    </span>
+</a>
+<nav aria-label="我不会说你来说" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        人不会说东西说
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#skill-four">
+<span class="md-ellipsis">
+      
+        Skill Four 自产自用
+      
+    </span>
+</a>
+<nav aria-label="Skill Four 自产自用" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        兽医、频率、优先权
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        求婚、走私、上诉
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        裸体、慢性病
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        以老带新说英语
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      
+        以不变应万变
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1368_2">
+<span class="md-ellipsis">
+      
+        为什么要先学这 1368 个单词？
+      
+    </span>
+</a>
+<nav aria-label="为什么要先学这 1368 个单词？" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      
+        好处一，短时间内速成口语
+      
+    </span>
+</a>
+<nav aria-label="好处一，短时间内速成口语" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      
+        （一）词汇越少，花在每个单词上的时间就越多
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      
+        （二）分类精确，可在最短的时间内找到所需要的词汇
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_15">
+<span class="md-ellipsis">
+      
+        （三）能轻松搞定以前不会表达的东西
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_16">
+<span class="md-ellipsis">
+      
+        好处二，好懂好记好用
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_17">
+<span class="md-ellipsis">
+      
+        好处三，进阶的必由之路
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+<span class="md-ellipsis">
+      
+        好处四，学到真正的口语
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+<span class="md-ellipsis">
+      
+        好处五，学会用英语思维
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="2_part2.html">
+<span class="md-ellipsis">
+    
+  
+    中篇 它们都是哪些词？
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="3_part3.html">
+<span class="md-ellipsis">
+    
+  
+    下篇 如何掌握这 1368 个单词？
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="4_afterword.html">
+<span class="md-ellipsis">
+    
+  
+    后记
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="5_1368_words.html">
+<span class="md-ellipsis">
+    
+  
+    1368 个单词
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Go
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Go
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../go/cross_build.html">
+<span class="md-ellipsis">
+    
+  
+    cross build
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../go/go_get_started.html">
+<span class="md-ellipsis">
+    
+  
+    get started
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Interview
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../interview/index.html">
+<span class="md-ellipsis">
+    
+  
+    面试题
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Java
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Java
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../java/java2exe.html">
+<span class="md-ellipsis">
+    
+  
+    Java to exe
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../java/javafx.html">
+<span class="md-ellipsis">
+    
+  
+    javafx
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Life
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Life
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../life/android.html">
+<span class="md-ellipsis">
+    
+  
+    Android
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../life/device.html">
+<span class="md-ellipsis">
+    
+  
+    Device
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../life/manga.html">
+<span class="md-ellipsis">
+    
+  
+    Manga
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../life/mpv.html">
+<span class="md-ellipsis">
+    
+  
+    MPV
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../life/phone.html">
+<span class="md-ellipsis">
+    
+  
+    Phone
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../life/video.html">
+<span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../linux/common_scripts.html">
+<span class="md-ellipsis">
+    
+  
+    common scripts
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../linux/linux.html">
+<span class="md-ellipsis">
+    
+  
+    linux
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../linux/mysql.html">
+<span class="md-ellipsis">
+    
+  
+    mysql
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../linux/nginx.html">
+<span class="md-ellipsis">
+    
+  
+    nginx
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../linux/zabbix.html">
+<span class="md-ellipsis">
+    
+  
+    zabbix
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Open source
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Open source
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../open_source/aria2c.html">
+<span class="md-ellipsis">
+    
+  
+    aria2c
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../open_source/excalidraw.html">
+<span class="md-ellipsis">
+    
+  
+    excalidraw: 手绘风格流程图
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../open_source/git.html">
+<span class="md-ellipsis">
+    
+  
+    git
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../open_source/mkdocs.html">
+<span class="md-ellipsis">
+    
+  
+    mkdocs
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../open_source/read_source_code.html">
+<span class="md-ellipsis">
+    
+  
+    read source code
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Pycharm
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Pycharm
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pycharm/black.html">
+<span class="md-ellipsis">
+    
+  
+    Black
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pycharm/closing_long_time.html">
+<span class="md-ellipsis">
+    
+  
+    PyCharm Closing in long time
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pycharm/cmmon_actions.html">
+<span class="md-ellipsis">
+    
+  
+    common actions
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pycharm/merge_functions.html">
+<span class="md-ellipsis">
+    
+  
+    merge functions
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_12_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Python
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/animation.html">
+<span class="md-ellipsis">
+    
+  
+    manim
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/chatgpt_wechat_robot.html">
+<span class="md-ellipsis">
+    
+  
+    Chatgpt wechat robot
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/force_directed_layout_algorithms.html">
+<span class="md-ellipsis">
+    
+  
+    Force-directed layout algorithms
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/jupyter.html">
+<span class="md-ellipsis">
+    
+  
+    jupyter
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/python.html">
+<span class="md-ellipsis">
+    
+  
+    poetry
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/rasa.html">
+<span class="md-ellipsis">
+    
+  
+    rasa
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/today_in_history.html">
+<span class="md-ellipsis">
+    
+  
+    today in history
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/twistd.html">
+<span class="md-ellipsis">
+    
+  
+    用twisted启动一个网络服务
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Vim
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_13_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_13">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Vim
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vim/auto_switch_keyboard.html">
+<span class="md-ellipsis">
+    
+  
+    auto switch keyboard
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vim/vim_init.html">
+<span class="md-ellipsis">
+    
+  
+    VIM init settings
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Vsocde
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_14_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_14">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Vsocde
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vsocde/plugin.html">
+<span class="md-ellipsis">
+    
+  
+    vscode plugin
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_15" type="checkbox"/>
+<label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Work
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_15_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_15">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Work
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../work/ahk.html">
+<span class="md-ellipsis">
+    
+  
+    ahk
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../work/apple.html">
+<span class="md-ellipsis">
+    
+  
+    apple
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../work/chrome.html">
+<span class="md-ellipsis">
+    
+  
+    chrome
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../work/cmd.html">
+<span class="md-ellipsis">
+    
+  
+    edit with ndd
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../work/excel.html">
+<span class="md-ellipsis">
+    
+  
+    excel
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../work/software.html">
+<span class="md-ellipsis">
+    
+  
+    software
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1368_1">
+<span class="md-ellipsis">
+      
+        如何解决 1368 个单词外的表达问题？
+      
+    </span>
+</a>
+<nav aria-label="如何解决 1368 个单词外的表达问题？" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#skill-one">
+<span class="md-ellipsis">
+      
+        Skill One 挑个大的
+      
+    </span>
+</a>
+<nav aria-label="Skill One 挑个大的" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        英语就像一棵大杨树
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        一个顶一百个
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#think">
+<span class="md-ellipsis">
+      
+        think 有很多种
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feeling">
+<span class="md-ellipsis">
+      
+        有感觉的都是 feeling
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bad">
+<span class="md-ellipsis">
+      
+        bad 不都是“坏”的意思
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#skill-two">
+<span class="md-ellipsis">
+      
+        Skill Two 拣实心的
+      
+    </span>
+</a>
+<nav aria-label="Skill Two 拣实心的" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        “重要”有四种说法
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#size">
+<span class="md-ellipsis">
+      
+        size 不光是尺寸的意思
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#skill-three">
+<span class="md-ellipsis">
+      
+        Skill Three 捏软乎的
+      
+    </span>
+</a>
+<nav aria-label="Skill Three 捏软乎的" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        正着不会反着说
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        我不会说你来说
+      
+    </span>
+</a>
+<nav aria-label="我不会说你来说" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        人不会说东西说
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#skill-four">
+<span class="md-ellipsis">
+      
+        Skill Four 自产自用
+      
+    </span>
+</a>
+<nav aria-label="Skill Four 自产自用" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        兽医、频率、优先权
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        求婚、走私、上诉
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        裸体、慢性病
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        以老带新说英语
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      
+        以不变应万变
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1368_2">
+<span class="md-ellipsis">
+      
+        为什么要先学这 1368 个单词？
+      
+    </span>
+</a>
+<nav aria-label="为什么要先学这 1368 个单词？" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      
+        好处一，短时间内速成口语
+      
+    </span>
+</a>
+<nav aria-label="好处一，短时间内速成口语" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      
+        （一）词汇越少，花在每个单词上的时间就越多
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      
+        （二）分类精确，可在最短的时间内找到所需要的词汇
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_15">
+<span class="md-ellipsis">
+      
+        （三）能轻松搞定以前不会表达的东西
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_16">
+<span class="md-ellipsis">
+      
+        好处二，好懂好记好用
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_17">
+<span class="md-ellipsis">
+      
+        好处三，进阶的必由之路
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+<span class="md-ellipsis">
+      
+        好处四，学到真正的口语
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+<span class="md-ellipsis">
+      
+        好处五，学会用英语思维
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="1368">上篇　为什么只需要 1368 个单词？</h1>
+<p>先说明一件事。</p>
+<p>这个词汇表（以下称为 R 词汇表。R 是我英文名字 Robbin 的首字母，请允许我虚荣一把吧）看上去只有 1368 个单词，但在真正使用的时候却远远不止 1368 个用法。学过英语的人都知道，英语单词的各种性啊，形啊，义啊，短语啊能把一个单词的意思扩充出很多很多。下面就具体说一下。</p>
+<p>一、该表只统计了词汇的单一形式</p>
+<p>也就是说，那些和某个词长得差不多的其他形式的单词并未计算在内。比如说，play 这个词，大家都知道它当动词用的时候是“玩”的意思，其实它也可以当名词用，意思是“戏剧”。我们就只在 R 词汇表里计算一次。另外像 agree 与 agreement，长得一个短一个长，我们也只统计了那个短的。</p>
+<p>事实上，R 词汇表中的大部分词汇都有两种或两种以上的变身，像 up 和 down 就可以分别变身为动词、介词、名词、副词、形容词五种形式，（比猪八戒的三十六变少，但比白骨精的多，开个玩笑）。但我们大多只会把它当介词和副词用，对其他三种用法就知之甚少了。其实，这三种是相当有用的，学会了也可以帮我们降妖伏魔，脱离表达困境。要是把这些形式也算上去的话，就算按每个单词最低两种变身计算，词汇量也可以膨胀一倍了。</p>
+<p>二、表中的大部分单词都有多个意思与用法</p>
+<p>这个也不难理解。尤其值得一提的是动词。就拿 give 来说吧，这个词简单到不能再简单了，就连幼儿园的小朋友都认识。但如果你只是把它当“给”来用的话，那可就真的是小儿科喽！</p>
+<p>单就朗文词典的统计，它就有多达 46 层意思。要是再加上它与 on, off, up, down 等其他有着超级功能的小品词所组成的超级短语组合，那就更牛了，其用法可以多达 76 种，这还不算什么 slang（俚语）啊，idiom（成语）啊。羡慕吧？不急，在后面的章节中，你会一睹它的芳容。它是在我教学的过程中最受学员倾慕的高富帅单词之一。</p>
+<p>当然，这么多用法也并不是要求我们都要掌握，孙悟空会七十二变，我们最多也就见他变变美女什么的，不实用不好看的咱也放着不用。但就算是按平均每个单词三层意思来计算（这可是保守得不能再保守的计算啦），R 词汇表中的词汇也可以扩充出三倍的用法来……有点感觉了没？</p>
+<p>说到现在，大家计算一下这 1368 个单词经过变身之后可以得到多少新的功能了。一一得一，二九一十八……哎哟，掐指一算，快过万了！就像爆米花一样，小小一勺进去，满满一桶出来。数好算，关键你得掌握这爆米花的火候与技术。</p>
+<h2 id="1368_1">如何解决 1368 个单词外的表达问题？</h2>
+<p>虽然说这个 R 词汇表可以通过变身膨胀数倍，但与整个英语大家庭比起来，这点量还是少得可怜。</p>
+<p>英语一共有多少个词汇？不知道，反正非常多，多到没人能说出确切数量。可以用来做参考的是，第二版的牛津大词典一共收录了 17 万个词，这 17 万个还不包括变身的词。也就是说，我们的 R 词汇表中的词还不到人家的 1%。</p>
+<p>够吗？</p>
+<p>如果说语言的表达功能是一一对应的，也就是说一件事只有一种说法，那咱这点词还真的不够用，一千来个词说不了几句就不够用了。但幸运的是，语言是一个应变能力特别强的东西。同样一句话，你既可以正着说，也可以反着说；既可以文绉绉地说，也可以土了吧唧地说；既可以用这个词说，也可以用那个词说；既可以用一句话说，也可以用几句话说。这么一来，咱这点词应该就够用了。不但够用，而且还能说出花样来。</p>
+<p>先给大家举个简单的例子。</p>
+<p>比如说，大家想表达这么一个意思：</p>
+<p>小儿子继承了她所有的财产。</p>
+<p>通常情况下，这句话会被翻译成下面这个样子：</p>
+<p><em>Her youngest son inherited all her property.</em></p>
+<p>如果你恰巧知道 inherit 这个词，也熟悉 property 这个词，OK，问题解决了。但很不幸的是，你是跟着 Robbin 老师学的，Robbin 老师的词汇表里没有 inherit 这个词，只有 property，怎么办？你会不会大骂 Robbin 老师是个骗子？那我告诉你，我不但能教你把这个意思表达出来，还能教你变着花样地把这句话表达出来！</p>
+<p>根据我的教学，这句话至少有以下四种表达方式：</p>
+<ul>
+<li>
+<p>Her youngest son got all her property.*</p>
+</li>
+<li>
+<p>She gave all the property to her youngest son.*</p>
+</li>
+<li>
+<p>All her property goes to her youngest son.*</p>
+</li>
+</ul>
+<p>最后一句是教给那些连 property 都背不下来的：</p>
+<ul>
+<li>She gave her youngest son all she had.*</li>
+</ul>
+<p>怎么样？清楚不？好懂不？地道不？简单不？</p>
+<p>这几句话只是看上去简单，真要脱口而出，就没那么容易了。这四句话恰恰代表了我下面要教给大家的四个表达技巧，四个让你能用 1368 个单词说一口流利英语的技巧：</p>
+<p>Skill One　挑个大的</p>
+<p>Skill Two　拣实心的</p>
+<p>Skill Three　捏软乎的</p>
+<p>Skill Four　自产自用</p>
+<p>有人说了，怎么听上去像在菜市场上买菜啊？嗯，我就是要用这种生活化的语言，告诉大家英语真的没那么神秘，说英语就跟种瓜买菜一个道理。</p>
+<p>下面就通过大量的实例给大家一一解读。</p>
+<h3 id="skill-one">Skill One 挑个大的</h3>
+<h4 id="_1">英语就像一棵大杨树</h4>
+<p>买菜、买水果一般都是挑个大的，说英语也是这样。为了系统性地说明这个道理，我准备换一个比喻，不说买菜，说种树。</p>
+<p>前面提到了，英语的词汇多达几十万个，如果把英语这门语言比喻成一棵参天大树的话，就说是杨树吧，那么这几十万个单词就是这棵树上的叶子，多到数不清。但是，这些树叶并不是一开始就长出来的。种树一开始只是栽棵小树苗，几乎没有叶子，先是扎根生芽，然后树干长出枝杈，枝杈又长出树枝，这些树枝又长出更小的枝条，最后在这些枝条上才长出一片片迎风招展的树叶。</p>
+<p>语言也是同理。</p>
+<p>猴子刚从树上下来变成人的时候，说不了几个字，支支吾吾无非就是你、我、吃、睡、食物等；到后来发现这些词不够用了，就再发明一些新的词；而随着交往的扩大、活动的增加，又需要更新的词补充进来……就这样一直加啊加，加到奴隶社会，加到约克王朝，加到工业革命，加到美国独立，一直加到现在，就变成了这么一棵枝繁叶茂的语言大树。</p>
+<p>所以说，虽然单词的数量庞大，但还是有规律可循的。这个规律就是，无论单词量有多大，总有那么一些词是最先发明的，而其他的词都是在这些词的基础上，逐渐开枝散叶长出来的。这就好比一棵大树，最初的这些词就是树的主干、次主干，然后才长出树枝、更小的树枝以及树叶。</p>
+<p>幸运的是，这些主干、次主干，甚至一些树枝，依然保持着它的原始功能，不但能够给长在它上面的树枝提供养分，还能为那些长在它上面的最末端的树叶提供养分。也就是说，这些最初的单词依然有着强大的表达功能，不但能代替其他单词，而且能代替很多由其发展而来的单词。</p>
+<p>拿语言学的专业术语来说，这些最初形成的词叫上义词，而在这些词的基础上创造的词叫下义词。为了形象一点，我们管这些最初的枝干叫大词，而由此生成的叫小词。所以才说要挑个大的。</p>
+<h4 id="_2">一个顶一百个</h4>
+<p>以前面那个例子来说，get 就是 inherit 的上义词，inherit 就是 get 的下义词，get 是大词，inherit 是小词。它们的区别就在于，大词可以代替小词使用，而小词却不可以逆向代替大词。</p>
+<p>既然我们管 get 叫大词，那它到底“大”在哪里呢？它“大”就“大”在除了刚才说的 inherit 之外，还可以代替很多很多的小词，请看下面的例子。</p>
+<p><em>I get a lot of E-mails every day.</em></p>
+<p>我每天都收到很多邮件。（代替 receive）</p>
+<p><em>The policeman finally got him.</em></p>
+<p>警察最终抓住了他。（代替 catch）</p>
+<p><em>I'll get the doctor.</em></p>
+<p>我去叫医生。（代替 call）</p>
+<p><em>Let's get some fresh air.</em></p>
+<p>让我们呼吸一下新鲜空气。（代替 breathe）</p>
+<p><em>She gets$19 an hour.</em></p>
+<p>她一小时挣 19 美元。（代替 earn）</p>
+<p><em>He didn't get the joke.</em></p>
+<p>他没听懂这个笑话。（代替 understand）</p>
+<p><em>We need to get the four-twenty bus if were going to be there by six.</em></p>
+<p>要想六点钟到的话，我们得搭乘四点二十的那班公交车。（代替 ride）</p>
+<p>Can you get the phone, please？I'm making dinner.</p>
+<p>请接下电话好吗，我在做饭。（代替 answer）</p>
+<p>I'm going to get you for that, you little brat！</p>
+<p>我要为此惩罚你，小捣蛋！（代替 punish）</p>
+<p><em>That stupid dog tried to get me.</em></p>
+<p>那条蠢狗试图袭击我。（代替 attack）</p>
+<p><em>I'll get dinner if you get the movie.</em></p>
+<p>你要是请看电影的话我就请吃晚饭。（代替 treat）</p>
+<p><em>What time will we get there?</em></p>
+<p>我们到那儿得几点了？（代替 arrive）</p>
+<p>以上代替的小词多吗？不多，只有 12 个，get 还可以代替下面的词（不再给例句）：</p>
+<p><em>persuade, convince, induce, influence, sway, entice, coax, incite, impel, wheedle, manage, fix, succeed, arrange, contrive, wangle, annoy, upset, anger, bother, disturb, trouble, bug, irritate, aggravate, gall, madden, exasperate, nettle, vex, irk, rile, pique, buy, obtain, gain, acquire, win, land, score, achieve, net, secure, attain, reap, glean, procure, collect, net, realize, gross, reap, fetch, bring, collect, prepare, cook, follow, notice, appreciate, perceive, grasp, comprehend, fathom, develop, contract, experience, sustain, undergo, grab, capture, trap, seize, nail, collar, nab, apprehend, contact, reach, puzzle, confuse, baffle, bewilder, confound, perplex, mystify, stump, beat, flummox, nonplus, touch, affect, excite, stir, stimulate, arouse.</em></p>
+<p>再加上上面的算多吗？也不多，一共才 108 个。</p>
+<p>那么 get 到底能代替多少个小词？不知道，无数个。现在开始觉得这个大词够“大”了吗？</p>
+<p>上面这些词，大部分都是 R 词汇表中所没有的。说实话，上面这些小词我也有很多不认识或不会用。But, it doesn't matter.（不过没关系。）我会用 get，这就够了。</p>
+<p>大家可以想象一下，有一个天平，左边的秤盘里只放了一个词 get，右边的秤盘里则密密麻麻挤了 100 多个单词，哪一个能量更大？哪一个可以更轻松地带回家？</p>
+<p>以上只是举了一个单词做例子，和 get 并肩齐名的大词还有 have, give, take, make。在我看来，这几个单词就是那棵大杨树最大的几个树杈，你要是不会用它们，或者把它们当小柴火棍烧了，那就太可惜了，简直是暴殄天物！但这就是事实，我们过去学的英语很多都是把这些真正的大词视作草芥，而拼着命地去背那些八竿子打不着，甚至一辈子都用不着的小词。</p>
+<h4 id="think">think 有很多种</h4>
+<p>下面我再举一个例子，说明大词的重要作用。</p>
+<p>think 这个单词大家都熟悉吧？它也是个大词，只不过很多人意识不到。先说一个课堂上的例子吧！</p>
+<p>在进行思维训练的时候，有一堂课是让学员用网络上随机摘取的社会新闻进行思维转换练习（关于这个练习的具体设计请参看后面的章节），其中有一个社会新闻的标题是：</p>
+<p>姐妹俩怀疑老公有外遇相约跳桥自杀</p>
+<p>要求学员用口语化的英语讲述这个新闻。有的学员就卡在“怀疑”这个词上了，他们的第一反应就是：嗯，以前学过“怀疑”这个词。然后就在大脑中进行搜索，最后有个学员就找到了“doubt”这个词，Two sisters doubted……其实这个地方应该用 suspect。这两个词都有“怀疑”的意思，但前者是说怀疑某事不存在或某人说的话是假的，后者是说怀疑某件不好的事有可能发生但没有确切证据。这个问题的关键在于，如果你不确定哪个词正确，或者是在干脆就没学过“怀疑”这个词的情况下，你是完全可以用 think 来代替，因为 think 就是这两个词的上义词，“怀疑”这事首先就是大脑里“想”出来的。</p>
+<p>其实所有需要大脑工作的行为都可以归结为 think。除了上面两个词外，还有如 consider（考虑），suppose（假设），guess（猜想），believe（相信），anticipate（预测），judge（判断），ponder（斟酌），contemplate（沉思）等。但这些词并不需要大家都记住。</p>
+<p>有人说，你的意思我懂了，那要怎么去学这些大词呢？为啥你举的这些例子我看着非常简单，但轮到我就不会用了呢？</p>
+<p>这就涉及思维转换的问题，以及如何循序渐进地提升口语能力的问题。树叶好摘，想一下子搂到碗口粗的树干就得下番功夫了。别急，后面的章节会告诉你如何培养自己的英语思维模式，我这里只是先告诉你一些要点，帮你把学英语的思路厘清一下。</p>
+<p>有的人会说了，照你的说法，那些小词都没用喽？那还发明这些小词干什么？别急，后面的章节会告诉你这些小词有什么用，要如何去学，如何去用。我只想提醒一下的是，对咱们这些口语都还说不利索的初学者来说，首先要解决的是流畅沟通的问题。要是走都走不稳当，咱先别考虑跑成吗？过去你花了那么多时间背那么多小词，跑起来了吗？</p>
+<p>刚才举的是动词的例子，为了说得更全面，我再分别从名词和形容词中各拿一个例子来做说明。</p>
+<h4 id="feeling">有感觉的都是 feeling</h4>
+<p>先说名词 feeling。这个词很多人只知道把它当感情来讲，事实上，汉语中相当一部分与感知相关的词都可以用这个词来表达。请看下面的例子：</p>
+<p><em>I didn't mean to hurt your feelings.</em></p>
+<p>我无意伤害你的感情。（感情，代替 emotion）</p>
+<p><em>I still have feelings for her.</em></p>
+<p>我依然爱着她。（爱情，代替 love）</p>
+<p><em>You have no feelings for others.</em></p>
+<p>你这人没有同情心。（同情，代替 sympathy）</p>
+<p><em>I got the feeling that he didn't like me much.</em></p>
+<p>我觉得他不是很喜欢我。（印象，代替 impression）</p>
+<p><em>I don't have any strong feelings about it.</em></p>
+<p>对这事我没啥感觉。（观点，代替 opinion）</p>
+<p><em>Who care about my feeling?</em></p>
+<p>谁会考虑我的感受？（态度，代替 attitude）</p>
+<p><em>She has a wonderful feeling for colors.</em></p>
+<p>她对色彩很有感觉。（悟性，代替 understanding）</p>
+<p><em>I had a strange feeling in my neck.</em></p>
+<p>我脖子梗怪怪的，不大舒服。（感觉，代替 sensation）</p>
+<p><em>I've lost all feeling in my legs.</em></p>
+<p>我腿上没感觉了。（知觉，代替 sense）</p>
+<p>看明白了吗？无论是肉体上的感受，还是情感上的感受，统统都可以用 feeling 来表达。其秘密就在于 feeling 这个单词本身，它是从动词 feel 转化过来的，而 feel 则是指人类对外界事物的感觉，无论是精神的还是肉体的，无论是积极的还是消极的。只有随着语言的发展才进一步细分为不同的 feeling。</p>
+<p>这就叫大词——上义词。不是硬性规定出来的，而是有道理可讲的。我们学英语就是要遵循这些客观规律，需要有人帮你把这些大词找出来，作为第一批要掌握的词汇。</p>
+<h4 id="bad">bad 不都是“坏”的意思</h4>
+<p>再举一个形容词的例子：bad。大家都知道这个词是“坏”的意思，那么它都有哪些下义词呢？请看例句。</p>
+<p><em>I thought it was a very bad article.</em></p>
+<p>我觉得这文章写得很烂。（劣质的，代替 inferior）</p>
+<p><em>Smoking gives you bad breath.</em></p>
+<p>抽烟会让你有难闻的口气。（难闻的，代替 unpleasant）</p>
+<p><em>You're a bad liar.</em></p>
+<p>你好可怜，谎也不会撒。（可怜的，代替 poor）</p>
+<p><em>He had a bad accident.</em></p>
+<p>他发生了严重的事故。（严重的，代替 serious）</p>
+<p><em>It is a bad time to call him.</em></p>
+<p>这个时间给他打电话不大合适。（不合适的，代替 inappropriate）</p>
+<p><em>I don't think I am a bad person.</em></p>
+<p>我认为我不是坏人。（邪恶的，代替 evil）</p>
+<p><em>You are a bad boy.</em></p>
+<p>你是个调皮小子。（调皮的，代替 naughty）</p>
+<p><em>Too much work is bad for your health.</em></p>
+<p>拼命工作有害健康。（有害的，代替 harmful）</p>
+<p><em>I've got a bad back.</em></p>
+<p>我背很疼。（疼痛的，代替 painful）</p>
+<p><em>She felt bad about leaving him.</em></p>
+<p>离开他，她觉得愧疚。（内疚的，代替 guilty）</p>
+<p><em>I'm afraid I'm feeling pretty bad.</em></p>
+<p>我觉得病得很厉害。（生病的，代替 ill）</p>
+<p>除了以上这些下义词外，我还想特别指出另外三个下义词：rotten, rancid, sour。这三个词都是指“食物坏了”的意思，但在搭配上却各有不同。</p>
+<p>rotten 是指食物腐烂了，所以你可以说 The apple is rotten. 而 rancid 是指含有脂肪的食物酸败了，所以你可以说 The butter is rancid.Sour 则是指牛奶等不新鲜了，所以你可以说 The milk is sour. 但在表示“坏了”这个意思时，这些词相互之间不可以混搭。如果你说 The apple is sour. 那就变成“这个苹果是酸的”的意思了。</p>
+<p>但是，神奇的是，所有的这些食物都可以和 bad 搭配，都可以用“食物名+be+bad”的句式表达食物变质的意思。所以，这个例子也进一步说明了，大词有多么重要，它可以帮初学者减轻多少负担！</p>
+<p>说到食物，还有一种最容易掌握的大词，那就是名词的自然分类。上面所举的几个例子，无论是动词 get 和 think，还是名词 feeling，或者是形容词 bad，都还需要学习者通过训练来掌握。但像一些天然的分类，比如说自然界的各种生物，可以分为 animal（动物），plant（植物），动物中又可以分为 bird（鸟），fish（鱼），insect（昆虫）等，它们的上下义词是非常明显的，上一个类别的词就是下一个类别的大词，比较容易理解和掌握。在表达精确度要求不高的情况下，完全可以用这些大词来代替具体的词。这个会在后面讲名词的时候具体介绍。</p>
+<h3 id="skill-two">Skill Two 拣实心的</h3>
+<h4 id="_3">“重要”有四种说法</h4>
+<p>在上一个章节中，“挑个大的”帮我们解决了那些不在 R 词汇表的小词的表达问题，那么这第二个技巧“拣实心的”又是什么意思呢？它又能帮我们解决什么问题呢？</p>
+<p>先给大家讲一个例子来说明什么是“实心的词”，什么是“空心的词”。比如说，我们想表达这样一个意思：</p>
+<p>这是一个重要的决定。</p>
+<p>通常情况下，我们会说成是：</p>
+<p><em>It is an important decision.</em></p>
+<p>当然这种说法没有任何问题，但这句话在口语中还可以表达为：</p>
+<p><em>It is a big decision.</em></p>
+<p>在这个例子中，important 就叫“空心词”，而 big 就是“实心词”。因为后者是我们可以直接体验到的，生活中有很多 big 的东西，什么 big house, big car, big city，我们通过肉眼就可以感知到什么是 big。而 important 这个词则是头脑中的概念，看不见，摸不着。</p>
+<p>所以，专业地说，“实心词”其实就是指具体的概念，而空心词则是指抽象的概念。任何语言，不仅仅是英语和汉语，都会把一些具体的概念转移用到描述抽象事物上去，这是一种比喻，专业术语叫隐喻，隐含的比喻。在前面这个例子中，decision 这个抽象概念就被暗暗地比喻成一座房子或者别的具体的东西，所以可以用 big 代替 important 形容它的重要性。</p>
+<p>反过来说，啥叫重要？什么样的东西重要？当然，我们可以创造出像 important 这样的词专门表达这个意思，但从另一个角度考虑，重要的东西一定有它的具体特点——一些可以被感知的特点，要么大，要么高，要么数量多，要么位置靠前。所以，我们除了可以用 big 来代替 important 外，还可以用其他具体概念来代替它，比如下面这两个例子：</p>
+<p><em>If it means that much to you, I'll go find something else.</em></p>
+<p>要是它对你那么重要，我就再去找找别的东西吧！（从数量角度说明事物的重要性）</p>
+<p><em>For him, family comes before everything.</em></p>
+<p>对他来说，家庭比什么都重要。（从位置角度说明事物的重要性）</p>
+<p>从以上例句可以看出，一个简单的“重要”的概念，我们就可以生出四种不同的表达方式，除 important 外，其他三种分别从大小、数量、位置来描述，都是非常具体、形象的。这就给我们的表达提供了更多的选择，在我们不知道某个概念对应的最直接的词或最直接的短语时，就可以通过这种方式来解决问题。事实上，英语中有很多抽象概念并没有一个专门的词汇来与之对应，也是需要用这些具体的词通过比喻来实现的。所以，这就是我们学习英语的第二个重要的技能，学会用具体的 R 词汇表达抽象的概念，也就是说，用实心词来表达抽象的概念。</p>
+<h4 id="size">size 不光是尺寸的意思</h4>
+<p>再给大家举一个例子，size 这个词，大家都知道是“尺寸”的意思，是一个很具体的实心词了，对吧？我们买鞋、买衣服甚至买房子都需要讲究它的尺寸，但如果我们把这个定义延伸到一些抽象的概念上，就会发现原来它可以如此轻松地解决一些问题。请尝试用英语表达以下句子：</p>
+<p>没人意识到问题的严重性。</p>
+<p>她很清楚任务的艰巨性。</p>
+<p>他欠了那么多钱，把我们给吓到了。</p>
+<p>头两句的“严重性”和“艰巨性”都属于抽象概念，一般初学者很难找到合适的词来表达，最后一句中的“他欠了那么多钱”虽然可以用一个从句来表达，但不够简洁。事实上，这三句话都是可以用 size 这个词来表达的，我们来看参考译文：</p>
+<p><em>Nobody realized the size of the problem.</em></p>
+<p><em>She knows the size of the task.</em></p>
+<p><em>We were shocked at the size of his debts.</em></p>
+<p>size 在这三句话里，是不是有四两拨千斤的感觉？这就是实心词的魅力所在。</p>
+<p>为什么实心词可以用来代替空心词？简单来说，其实是因为世界是相通的，无论是外面客观世界的概念，还是内心主观世界的概念，都有一一对应的关系。拿前面的 size 来说，不光是有形的房子或衣服有这个属性，无形的债务或各种问题也有这个属性。英语中当然有一些专门的词来表达抽象概念的这些属性，但那些大多用在比较正式的场合，也就是我们通常所说的书面语。既然我们现在要学的是口语，那为什么不用轻松一点、大家都容易理解的方式来表达呢？</p>
+<p>从词性来看，形容词和介词经常被用作抽象概念。这一内容我会在下面的章节介绍这两种词汇时特别讲解。</p>
+<h3 id="skill-three">Skill Three 捏软乎的</h3>
+<p>这话听上去怎么像是在说“拣软柿子捏”啊？没错，就是这个意思，因为软的好欺负。</p>
+<p>前面说了，同一件事可以有不同的说法。如果你想用的那个说法在 R 词汇表中一时找不到顺手的单词，大词也没有，实心词也找不到，千万别随便找个词凑合！而是要迅速地转换一下表达的角度，换个自己有把握的角度。这就叫“捏软乎的”。</p>
+<p>举个例子吧！比如说，你想表达下面这个意思：</p>
+<p>我喜欢吃瘦肉。</p>
+<p>很多人脑子里的第一反应会是 thin 这个词，“瘦”的意思嘛！但又不是很有把握，因为我们以前只是在说“他长得很瘦”的时候用到这个词，但不晓得说“瘦肉”是不是也可以用这个词。好啦，既然没把握，就不要“霸王硬上弓”啦，你要是说成 I like to eat thin meat. 可就闹笑话了！那怎么办呢？其实准确的表达应该是 lean meat, lean 是指含脂肪比较少的肉，但这个词并不在 R 词汇表中，所以这时我们就要换一个说法，“瘦”不会说，你还不会说“肥”吗？喜欢吃瘦肉，反过来讲不就是“不喜欢吃肥肉”吗？fat 这个词你是有把握的啊！除了胖之外，我们都知道它有“脂肪”的意思，那这个肥肉的表达是有把握的啦！所以，这句话你就可以灵机一动说成是：</p>
+<p><em>I don't like fat meat.</em></p>
+<p>再举个类似的例子。你想跟老外说，“这个土豆是生的”。“生”（raw）这个词不会说，不会说就不要勉强嘛！“生”不会，“熟”我还不会吗？我说它没煮过不就可以了吗？所以，这话就可以说成：</p>
+<p><em>This potato is not cooked.</em></p>
+<p>这就是我们要讲的转换角度第一招：“正着不会反着说”。还有其他两招分别是：“我不会说你来说”和“人不会说东西说”。</p>
+<h4 id="_4">正着不会反着说</h4>
+<p>先说第一招，“正着不会反着说”。其实这招很好理解，就是用反义词嘛！没错，这世界原本就很简单，上有天下有地，人分男女，兽有公母，阴的反面就是阳，善的对手就是恶。只要把你会说的那个词否定掉就是你不会说的那个意思了。这招虽然比较简单，但我这儿还是有几个词需要强调一下。</p>
+<p>一是 keep 的用法。这个词在英语中经常用来进行否定表达的，可以用来代替很多汉语中相反的概念，只是因为我们不大熟悉这个词的用法，所以用起来并不是很顺手。比方说，我们汉语习惯说“零钱不用找了”。这个“找”字很多人一时反应不过来怎么说，其实就可以用 keep 进行反向表达，“不用找”的意思就是“可以留着”，所以可以说成是：You can keep the change. 或 You can keep it. 这其实也是最地道的英语表达。还有下面的例子：</p>
+<p><em>Keep it to yourself.</em></p>
+<p>这事不能对别人说。</p>
+<p><em>He keeps something from his wife.</em></p>
+<p>他对妻子隐瞒了些什么。</p>
+<p><em>The baby keeps us up all night.</em></p>
+<p>宝宝闹腾得我们一夜没睡。</p>
+<p>二是 off 的用法。off 也是我们很不习惯用的一个词，但这个词的能量非常大，在后面的章节会有详细说明，这里先就其否定词的作用让大家一窥斑豹。举个例子，我们买东西的时候经常会碰到打折的产品，比如说，“所有的衬衫打八折”。当然我们可以用 discount 这个词，但这个词并不在我们的 R 词汇表之上，那如何通过 off 这个词来解决呢？很简单，你只要说：</p>
+<p><em>All the shirts are 20%off.</em></p>
+<p>什么意思？就是说所有衬衫的价格会去掉 20%。其实这种表达比起用 discount 来还更简洁一些，因为 discount 是名词，你还必须加一个动词才能把意思说完整。</p>
+<p>还有另外一个类似的例子。你去理发的时候（尤其是男士），一般理发师会问你：“要留多长啊？”这个“留”字，很多人又不知道怎么说了，但用了 off 这个词，问题就一下子解决了：</p>
+<p><em>How much do you want your hair off?</em></p>
+<p>off 的否定作用还可以帮你解决以下问题：</p>
+<p><em>His free throw shooting was off.</em></p>
+<p>他罚球没有罚中。</p>
+<p><em>He rides bicycle with his hands off the handle.</em></p>
+<p>他骑车的时候不扶车把。</p>
+<p>以上两个例子其实也说明了英语和汉语在看问题角度上的一个差别，一个正着看，另一个反着看。掌握了这个规律也有助于我们把英语说得更加灵活。</p>
+<h3 id="_5">我不会说你来说</h3>
+<p>转换角度第二招：“我不会说你来说”。</p>
+<p>这是什么意思呢？大家还记得本章节刚开始时的那个例句吗？“小儿子继承了她所有的财产。”一共有四个说法，其中前两个是：</p>
+<p><em>Her youngest son got all her property.</em></p>
+<p><em>She gave all the property to her youngest son.</em></p>
+<p>这两句话就是“我不会说你来说”的体现。我们说话的很多时候是在表达两个人之间关于某种事物的所有关系，这个事物可能是具体的，也可能是抽象的。既可以表达为一个人给了另一个人某种东西，反过来也可以表达为另一个人从这个人手里得到了某种东西。也就是说，如果“我”做主语不好表达，那就换成以“你”来做主语。就这个例句而言，当事人分别是她的小儿子和她，要表达的是这两人之间对财产的所有关系。她把财产给了小儿子，也就等于小儿子从她那里得到了她的财产。</p>
+<p>再举一个类似的例子：</p>
+<p>银行批给了我 30 万元按揭贷款。</p>
+<p>如果你不知道 mortgage（按揭）怎么说的话，那就换成是当事人的另一方，以“我”为主语来表达，变成：</p>
+<p>I borrowed 300，000 yuan from the bank.</p>
+<p>问题轻松解决。再给一个抽象的例子：</p>
+<p>你把感冒传染给了我。</p>
+<p>如果 infect（传染）不会说，你可以换个角度以“我”做主语，说成是：</p>
+<p><em>I got the cold from you.</em></p>
+<p>当然，如果你知道 infect 还有个大词可以代替的话，这句也可以说成：</p>
+<p><em>You gave me the cold.</em></p>
+<p>类似的例子还有，你问商家：</p>
+<p>你们这儿可以刷卡吗？</p>
+<p>如果“刷卡”不会说，那就换成“我”做主语，变成：</p>
+<p><em>Can I use bank card?</em></p>
+<h4 id="_6">人不会说东西说</h4>
+<p>转换角度第三招，“人不会说东西说”。</p>
+<p>如果我不会说的事情换成你还是不会说怎么办？那就只能用最后一招了，让“东西替你开口表达”！继续引用前面的例句：小儿子继承了她所有的财产。</p>
+<p><em>All her property goes to her youngest son.</em></p>
+<p>在这句话中，主语既不是“小儿子”也不是“她”，而是变成了“财产”这个第三者。按说财产是个没有生命的东西，既没长脚也没长腿，怎么能让它 go 呢？这就是英语和汉语之间一个非常大的区别，也是我们要重点掌握的一个表达技巧。汉语习惯于从人的角度，以人做主语来表达，但英语却经常转换角度，以物做主语进行表达。这样做的好处就是：可以让英语说得更简单一些，因为有些事情不好从人的角度来表述或者不需要知道是谁做的事情。</p>
+<p>go 是这一类词的典型代表。比如在颁奖典礼上，嘉宾经常要说一句：</p>
+<p>获奖的是 XXX。</p>
+<p>汉语用的是人做主语，英语当然也可以直接说成是：The winner is XXX. 但在很多场合下，是用奖品做主语，说成下面这个样子：</p>
+<p><em>The award goes to XXX.</em></p>
+<p>奖品变成一个会走路的东西了。生活中，我们也有大量类似的用法，比如：</p>
+<p><em>My headache just doesn't go.</em></p>
+<p>我的头疼老是好不了。</p>
+<p>I don't know where all my money goes！</p>
+<p>我不知道钱都花到哪儿去了！</p>
+<p><em>Where do these plates go?</em></p>
+<p>这些盘子要放在哪儿呀？</p>
+<p>我们后面有个章节是专门介绍动词 go 的，大家可以参考。</p>
+<p>除了 go 之外，经常用来以物做主语的典型动词还有 come, bring, say, speak, wait, stay, stop 等动词，如：</p>
+<p><em>This dress comes in three colors.</em></p>
+<p>这条裙子有三种颜色。</p>
+<p><em>What brings you here today?</em></p>
+<p>今天什么风把你给吹来了？</p>
+<p><em>What do these figures say?</em></p>
+<p>这些数字说明了什么？</p>
+<p><em>Her success speaks for itself.</em></p>
+<p>她的成功说明了一切。</p>
+<p><em>The paperwork can stay till tomorrow.</em></p>
+<p>案头工作可以明天再做。</p>
+<p><em>My hat wont stay.</em></p>
+<p>我的帽子老戴不住。</p>
+<p><em>Your responsibility doesn't stop here.</em></p>
+<p>你该干的事还没干完呢！</p>
+<h3 id="skill-four">Skill Four 自产自用</h3>
+<p>终于说到这个终极杀手了！</p>
+<p>为什么说它是终极杀手？意思就是说，如果前面所说的三个技巧都歇菜了，都没办法搞定你想表达的东西，OK，我们就用这一招，所有的全摆平！这一招就是超级无敌夺命手，这一招就是风雨雷电乾坤大挪移！</p>
+<p>有人说了，这么厉害？为什么会这么厉害？这么厉害是有它深层原因的，待会儿向大家解释。</p>
+<h4 id="_7">兽医、频率、优先权</h4>
+<p>所谓的“自产自用”到底是什么意思呢？其实很简单，就是说如果有个词你不知道，或没记住，干脆就用解释的方法把你想说的意思表达出来，自己生产自己用。先举几个简单的例子。</p>
+<p>你想表达“兽医”这个意思，但不知道 vet 这个词，R 词汇表中也没有，最直接的解决办法就是说成 a doctor for the animals，因为兽医也是医生，你只要说明是为动物治病的医生就可以了。你想说“意大利面”，但把 pasta 这个词给忘了，是不是可以说成是 Italian noodle？因为意大利面也是面，你知道 noodle 这个词，也知道意大利怎么说，问题就解决了。再比如，你要跟老外介绍说“那个人是我同事”，结果 colleague 这个词一时想不起来了，但你可以说成 He is someone in my company. 或者是 He is someone from work. 因为所谓的同事，就是指你们在同一家公司工作嘛！</p>
+<p>有人说了，你说的这些简单了点，我也会。那我就告诉你复杂一点的。比如说，日本是个地震多发的国家，你想问这样一个问题：“日本地震发生的频率是多少？”结果脑子里一时不知道频率 frequency 这个词了，所以你就说不出：What is the frequency of earthquake in Japan?</p>
+<p>但是，你完全可以这样问：</p>
+<p><em>How often does earthquake happen in Japan?</em></p>
+<p>啥叫频率？不就是多长时间发生一次吗？</p>
+<p>再举个高级一点的例子。你偶尔学了 priority 这个词（“优先”的意思），感觉很厉害，但是到了真正要表达的时候，却把这个词给忘了，怎么办？话还得说啊。同样道理，你只要把这个词结合句子解释一下就可以了。priority 在词典中的解释是：</p>
+<p><em>something that you think is more important than other things and should be done first.</em></p>
+<p>比如说，你想说的是，“结婚是头等大事”，本来可以说：</p>
+<p><em>Getting married is the first priority.</em></p>
+<p>现在把 priority 给忘了，不要紧，这句话可以解释成：</p>
+<p><em>Getting married is more important than other things and should be done first.</em></p>
+<p>清楚不？通顺不？流畅不？</p>
+<h4 id="_8">求婚、走私、上诉</h4>
+<p>又有人说了，你举的好像都是名词的例子，其他词汇是不是也可以用这种方式来解决？当然可以。我再给你们举一些动词和形容词的例子。</p>
+<p>先说个大家最熟悉的吧！比如说，你同事把你得罪了，你跟他说：你应该向我道歉。你脑子里的第一反应肯定是 apologize，但这个词不在 R 词汇表里，怎么办呢？很简单：</p>
+<p><em>You should say sorry to me.</em></p>
+<p>因为 apologize=say sorry。依此类推，你说“欢迎某人”，不一定要说 greet somebody，只要说 say hello to somebody。你说“接受请求”，不一定非得用 accept，可以说 say yes to something。</p>
+<p>propose（求婚）这个词也是很多学员之前就背下来的，但是，不用这个词完全可以非常轻松愉快地把事儿说明白。比如，我昨晚向她求婚了：</p>
+<p><em>I asked her to marry me last night.</em></p>
+<p>因为牛津词典对 propose 这个词的解释就是 to ask somebody to marry you。你几乎不需要做什么改变就可以直接把它用在句子里。</p>
+<p>如果把上面这句话再加一点内容，变成：我昨晚向她求婚，她答应了。那么再用上刚刚前面说的那个 accept 的表达，就可以说成：</p>
+<p><em>I asked her to marry me last night and she said yes.</em></p>
+<p>多神奇啊！原本是两个复杂单词的表述——propose 和 accept，轻松愉快地用一个小学生都会的 ask 和 say 就解决了！</p>
+<p>再说点难的。smuggle（走私）这个词，听上去很复杂，似乎没那么容易解释。其实仔细一想也简单，所谓“走私”，不就是“把一些东西或人从一个国家偷偷带到另一个国家”嘛，只不过这种行为是不合法的，所以需要加上 secretly 或 illegally 说明一下。比如，他往中国走私武器。就可以说成：</p>
+<p><em>He takes weapons into China illegally.</em></p>
+<p>再说个更专业的：appeal（上诉）。这是个法律术语，够专业了吧？其实解释起来并不难：to ask the court to change the decision。只不过这个要求比较正式，需加个 formally 修饰一下。“他要求上诉”这句话就可以说成：</p>
+<p><em>He formally asked the court to change their decision.</em></p>
+<h4 id="_9">裸体、慢性病</h4>
+<p>形容词也同样如此。形容词是用来描述事物在某一方面的性质或状态的，你只要把这个性质或状态说明白就可以了。我就不说简单的了，直接举几个有点难度的例子。</p>
+<p>比如说，naked（赤裸的）这个词，R 词汇表中没有，其实这个词很好解释，什么叫裸体？不就是啥也没穿吗？你说“她赤身裸体”，就是“她什么衣服也没穿”的意思。而且可以用不同的句式来表达：</p>
+<p><em>She wears nothing.</em></p>
+<p><em>She has nothing on.</em></p>
+<p><em>There're no clothes on her.</em></p>
+<p>随便挑！</p>
+<p>再说一个词 chronic（慢性的），一般用来形容疾病，这个词对初学者来说比较专业、比较陌生。啥叫慢性病？不就是说这个病“会拖延很长时间”吗？所以，你说“这是个慢性病”的时候，你只要说：</p>
+<p><em>This disease will last for a long time.</em></p>
+<p>就足以让对方明白你说的是什么意思了。</p>
+<h4 id="_10">以老带新说英语</h4>
+<p>好了，例子举得差不多了，说到这儿，大家应该比较清楚这个“自产自用”招数的厉害了吧？它几乎无所不能。有人可能还有点担心，你这个招数听上去虽然很管用，但会不会不规范啊？老外会这样说吗？我可以很负责任地告诉你，以上给你举的所有例子不但在表达上没有任何问题，有一些还非常地道，在 native speakers 中使用的场合比它所解释的词汇还要多。</p>
+<p>为什么会这样？为什么很多词都可以用解释的方式来表达？其实说起来很简单。前面说过，词汇的生成与发展就像一棵大树，最初就是一个树干加一些树枝，后来越长越大，就不断有新枝叶生出来。关键在于后面新生的枝叶都是长在前面的树干与树枝上的。也就是说，新增加的词汇都是用本来就存在的那些老词解释出来的。一开始还只是解释，说得多了，就觉得不如发明个新词来替代它，这样可以让和它相关的一些表达变得更省力一些。</p>
+<p>就拿 smuggle（走私）这个词来说，今天你说一句：Someone takes something to somewhere secretly. 明天他说一句：Someone brings something to somewhere illegally. 后来大家一合计，嗯，干脆咱就给这种行为发明一个新词吧！多省力。大家说，好！于是，smuggle 这个词就诞生了。至于为啥叫 smuggle 而不是叫 muggle 或者其他什么词，咱就不考究了，也可能当初有个经常走私的人就叫 smuggle，嘿嘿！</p>
+<p>所以说，既然大部分词都是这样诞生的，那这些词就都是可以用已知的词来解释的，那么从理论上来讲，大部分用到这些词的句子也都是可以用解释的方式来表达的。这是这种“自产自用”的招数非常神奇的重要原因，也从根本上论证了为什么我们可以用 1368 个单词说流利的英语这个结论。</p>
+<p>当然，并不是说所有的词汇都要用这种方式来表达，那这样的话新词的发明就没有意义了。而且，我们的 R 词汇表中所选择的也不都是那些用来解释其他词汇的最基础的词汇，也包括一些虽然可以用其他词汇来解释，但是解释起来会比较复杂，或者说大家更习惯用的词汇。</p>
+<p>比如说：interview（面试）这个词，它的名词形式在牛津词典中的解释是：</p>
+<p><em>a formal meeting at which somebody is asked questions to see if they are suitable for a particular job, or for a course of study at a college, university, etc.</em></p>
+<p>它包含的信息特别多，既涉及场合，也涉及目的，所以，用解释的方式来代替这个词用起来就会非常别扭，也没必要。</p>
+<p>再比如，动词 marry（结婚），在词典中的解释是：to take someone as your husband or wife。虽然这种解释非常简单，用在句子里代替 marry 这个词也很顺畅，但 marry 是个经常用到的词，而且不难记，所以这个词就需要被收录到 R 词汇表中。其实在现实生活中，这两种说法都会用到，比如在结婚仪式上，主持人就是这样问的：</p>
+<p><em>Jack, would you like to take Sarah as your wife?</em></p>
+<h4 id="_11">以不变应万变</h4>
+<p>除了解决口语表达问题外，“自产自用”的另一个现实意义是，英语单词比汉语词汇要难学得多、难记得多，学会解释能帮我们省掉很多记单词的麻烦。这不仅仅是对初学者，即使是对英语水平较高的人也有现实意义。那么，英语单词难记在哪里呢？简单来说，就是汉语的很多词是可以直接看出意思来的，而英语单词只是一系列字母的组合，除了词缀能表达些许意思外，基本看不出它的词义。</p>
+<p>打个比方，我们说“车”，车分轿车、卡车、火车、吊车、出租车、救护车、公共汽车、厢式货车，等等。汉语很简单，“车”字前面加一个修饰性的词，基本就能猜出这个车是用来干什么的了。而英语对应的单词则没这个功能：car, truck, train, crane, taxi, ambulance, bus, van 等一类车一个名字，而且相互之间看不出任何的关联。也就是说，你要记住它们必须一个一个单独记。</p>
+<p>这种现象并不是偶然的，而是在很多名词上体现出来的。再比方说“酒”，我们汉语只要在“酒”前面加一个修饰性的词就可以变成：白酒、啤酒、葡萄酒、香槟酒等，而英语则分别是：liquor, beer, wine, champagne。关于“肉”，我们只要说：猪肉、牛肉、鸡肉、羊肉。而英语则要说：pork, beef, chicken, mutton。关于树，我们只要说：松树、橡树、榆树、柳树……反正都是树。而英语则要说：pine, oak, elm, willow。</p>
+<p>不光是这些具体事物的名称，还有一些抽象的概念英语也有这个特点。比如，我们管大学里不同年级的学生分别叫大一生、大二生、大三生、大四生，通俗易懂，简单明了。而英语则要叫：freshman, sophomore, junior, senior。我们说裁判，只要在裁判前面加上相关的项目就可以，如足球裁判、网球裁判。而英语则要区分为 referee 和 umpire。</p>
+<p>也不光是名词，动词也有这样的特点。就拿“看”和“说”这两个动作来讲，可以分出很多不同的“看法”和“说法”。“看”可以分为：凝视，窥视，扫视，怒视。“说”可以分为：小声说，大声说，含糊地说，不耐烦地说。我们汉语是只要拿出一个“视”字和一个“说”字，前面加上修饰性的词就可以了，而英语则每个都对应着一个词，分别是：</p>
+<p>看：stare peep glance glare</p>
+<p>说：whisper shout mumble snap</p>
+<p>怎么样？是不是觉得英语很变态？从这一点上来讲，英语的造词能力真不如我们的汉语。一个老外只要掌握 1000 多个汉字就可以看懂大部分中文文章，而一个美国的高中生有着 30000 多的词汇量，阅读的时候还得随身带着一本大词典。作为一个外语学习者，我们背 3000 个单词都累得头昏脑涨，眼冒金星，想要达到美国高中生的词汇量是不是比登天还难？</p>
+<p>所以，要是没有个妥当的办法帮我们解决这个问题，怎么才能做到无往而不胜呢？</p>
+<p>其实，就前面举的这些例子，我们都可以通过解释的方法来解决。比较熟悉的那些单词就不说了。crane（吊车）可不可以说成是 a tall machine used to lift heavy things？mutton（羊肉）可不可以说成是 the meat of a sheep？Sophomore（大二学生）可不可以说成是 the student in the second year at a university？至于裁判，无论是哪项运动的，先统统用一个 judge 打头，然后说明是哪项运动的裁判。而“看”和“说”则可以轻松地分别用一个 look 和 speak 打头的短语搞定：</p>
+<p>stare（凝视）：to look at somebody/something for a long time</p>
+<p>peep（窥视）：to look at somebody/something secretly</p>
+<p>glance（扫视）：to look at something/somebody quickly</p>
+<p>glare（怒视）：to look at somebody/something angrily</p>
+<p>whisper（小声说）：to speak quietly to somebody</p>
+<p>shout（大声说）：to speak loudly to somebody</p>
+<p>mumble（含糊地说）：not to speak something clearly</p>
+<p>snap（不耐烦地说）：to speak something impatiently</p>
+<p>其实，用解释的方法就相当于是用我们汉语中最小单位的字来造词，只要把英语中那些最小单位的词掌握了，啥东西都可以用它们解释出来。这就是我们精选这 1368 个单词的意义，它们就像是活跃在英语这幢摩天大楼中的蓝色小精灵，无处不在，无所不能。至于这些可爱的小精灵都是哪些词汇？我们将在后面的章节中分门别类地一个一个介绍出场。</p>
+<h2 id="1368_2">为什么要先学这 1368 个单词？</h2>
+<p>英语单词那么多，为什么要先学这 1368 个单词？</p>
+<p>其实道理前面已经说了很多了，因为这些词“够粗大”，能够担得住它们上面的枝枝叶叶；“够实在”，土是土了点，但文绉绉的意思也能表达；“够心软”，一般的问题找它们都能帮你应付；“超级组合”，它们就像一群蓝精灵，再棘手的问题它们都可以联起手来搞定。但关于学习这些词的意义还远远没有说完，我再从以下几个角度给大家说明一下。</p>
+<h3 id="_12">好处一，短时间内速成口语</h3>
+<p>这是一个诱惑众多、瞬息万变的时代，花花世界有那么多馋人的东西，没人愿意像远古时代一样把太多的时间投入到一门语言的学习中，尤其是对上班族来说，更是缺乏“两耳不闻窗外事，一心只读英语书”的条件和精力。</p>
+<p>如果用传统的英语教学方式进行学习，费心费力不说，学到最后还是一口流利的“中式英语”。流行一时的所谓“封闭式，全外教”的培训模式，大多也只是帮国人找到了一个与老外打哈哈的机会，英语学习基本上是零打碎敲，学了个清汤寡水，聊胜于无。所以，我在这本书里所创新的用 1368 个单词说流利口语的学习方法就是在为大家找到一个既不需要花费太多时间记单词，又能解决基本交流问题的折中方案。用句流行的话说，这叫“集中精力办大事”。</p>
+<p>下面就让我们来看看这个“大事”是如何办成的。</p>
+<h4 id="_13">（一）词汇越少，花在每个单词上的时间就越多</h4>
+<p>这个道理很好理解，我就不多说了。既然前面一个章节已经论证了这 1368 个单词的超级能量，那么我们要做的就是把这些超级能量词收入囊中就可以了。但正因为每个单词都超级有能量，就需要花费更多的时间来掌握，而绝不是蜻蜓点水似的背一背就可以了。</p>
+<p>以前很多学生学英语学得最起劲的就是背单词，最头疼的也是背单词，所以才有那么多人发明了一些奇奇怪怪的所谓的“背单词神奇大法”。通过前面的讲述大家应该已经可以体会到了，一个单词有那么多用法，那么多搭配，是你背下来就能搞定的吗？而且，你背单词只能记住其中一两个中文词义，这些中文词义弄不好就会误导你，就好比是拿中国的甜面酱浇在西餐的比萨上，那可就变味了。</p>
+<p>现在好了，只有 1368 个单词，根本不用去理会那所谓的 5000 个四级单词，6000 个六级单词，8000 个雅思，10000 个托福了。1368 个单词，就算一天只学 10 个单词，100 来天也解决问题了，况且我的学员只需要短短的两个月。诱人吗？努力吧！</p>
+<p>喜欢抬杠的同学要知道，这本书主要解决的是口语交流问题，既不是读，也不是写。而且，掌握了本书的技巧，其他的听说读写能力也就迎春风而解，嗖嗖地！</p>
+<h4 id="_14">（二）分类精确，可在最短的时间内找到所需要的词汇</h4>
+<p>这么做有什么意义呢？打个简单的比方吧，你是一个图书管理员，别人要找你借书，而你一下子又记不住那么多书名。那么，你觉得这些书是分门别类地放在固定位置上方便你找呢，还是乱七八糟地放在一起好找？</p>
+<p>对英语学习者来说，经常出现的问题就是碰到想表达的东西找不到合适的词汇，当场就卡壳了，但过后经别人提醒又想起来了，哦，原来可以用这个词。问题就在于，我们以前学这些词的时候一是没学透，二是没按规矩。啥叫规矩？就是像管理图书一样，你得把它们分门别类地放好，用的时候才能很快找到。当然，这儿的分类可不是我们传统所做的简单按词性分为名词、动词、形容词，名词再分可数、不可数的，动词分及物、不及物的，形容词分定语、表语的，那都太表象，没能看到骨子里去。</p>
+<p>我在这本书里给词汇做的分类是按血缘关系来分的，是从出生之后就排了族谱的。谁和谁是一辈的，父辈是谁，祖父辈是谁，亲戚都有谁，分得一清二楚。只有这样，你才能知道谁和谁是近亲，不能结合，谁和谁又是最优秀的基因搭配。学英语最难的除了词义外，就是语法。在这本书里，我们没有按传统的方式专门把语法拿出来讲，而是从语言表情达义的根本出发，把语法渗透到词汇的学习中去。词法中本来就隐藏了语法，学好了词汇及其搭配，大部分语法就已经学好了。</p>
+<p>回到正题上来，先给大家举个例子说明词汇精确分类对口语表达的重要作用。</p>
+<p>被老板骂了</p>
+<p>比如说，有个合同没能签下来，虽然主要责任并不在你，但是老板却骂了你。你觉得冤屈，想把这个故事讲给外国友人听，但一时想不起“骂”应该怎么表达。在你没有采取我在这本书里介绍的学习模式之前，你头脑中可能会有一些模模糊糊的印象，“骂”好像是 s 打头的，s 什么来着？s……s……s……别嘶了，再嘶成眼镜蛇了。嘶到最后，如果你记性还不坏，可能会一拍脑袋，哦，想起来了，是 scold！My boss scolded me！悲摧了，好不容易想起来一个词，还用错了。scold 虽然有骂人的意思，但更多的是针对孩子，老板不可能把你像个孩子一样大声斥责。这个地方的骂更多的是“责怪”的意思，应该用 blame 这个词。但如果你是用我教你的方法来学习的，那就不会犯这种错误了。</p>
+<p>R 词汇表中对所有的动词都按一定规则进行了科学分类。就拿“说”这个动作来讲，我们把它做了以下分类（部分）：</p>
+<p>表达意见（say）：agree approve deny cancel promise</p>
+<p>告知信息（tell）：suggest claim warn introduce recommend</p>
+<p>提出要求（ask）：beg charge order</p>
+<p>带有情感（say）：argue blame praise encourage complain insist kid shout</p>
+<p>而在“带有情感”这一类中，又可以分为：</p>
+<p>生气地说：argue shout</p>
+<p>开心地说：kid</p>
+<p>否定地说：blame complain</p>
+<p>肯定地说：praise encourage</p>
+<p>坚定地说：insist</p>
+<p>而在“否定地说”当中又分出责怪（blame）和抱怨（complain）两种。</p>
+<p>我们在学习过程中会采取先易后难的方式，先训练学习者用 say, tell, ask 这样不带任何附加成分的基础词进行表达，然后再做分类练习，让他们把“感情色彩”加进去之后再进行表达。这样就可以在他们的头脑中培养出一个丰富的关于“说”的词汇网络，既有简单的，也有复杂的，而且它们之间的上下级关系还非常清晰，方便在第一时间找到所需要的最合适的词。</p>
+<p>就上面的那个例子，学员在表达“老板把我骂了”这个意思时所经历的思维过程应该是这样的：脑子里最先出现的是汉语“骂”这个概念（大多数学员都要经历这个阶段，还做不到直接用英语思维），但第一时间没找到对应的英语单词，然后迅速反应出这是一个关于“说话”的词，当然他可以直接用 say 这个词来表达，说成是 My boss said it was my fault. 没有任何问题，但如果这个学习者平时的训练效果够好，他会很快反应出这是一种“带有否定情感地说”，可以迅速地找到 blame 这个词：My boss blamed me for that.</p>
+<p>所以，大家可以看到，这种分类训练一下子帮学员找到了两种解决方案，其一是往上找，找更容易的表达方式，其二是往下找，找更准确的表达方式。是不是比前面那个把“骂”与 scold 这样一个自己都还没搞清楚的概念一一对应起来要合理得多、有效得多？</p>
+<p>传统的“背单词”仅仅是背诵某一个对应的汉语词义，既不知道用法，概念又模糊。在我们这儿，则不仅仅要知道它的基本词义，还要知道它的具体词义，既要知道它是“谁生的”，父辈是谁，又要知道它自己具备什么样的“基因”，血缘关系非常清楚。当然，除此之外，有些词汇还要我们教大家如何与其他词搭配使用，也就是说，如何与其他词“联姻”，这一点会放在后面讲，请大家耐心看下去。</p>
+<p>有人可能会有这样的疑问，你一个 blame 要分三级才能找到，但我说话就是分分秒秒的事，哪有那么多时间去回忆，去思考啊？其实也没那么复杂，原因有二。其一，这三级词汇我们解释起来似乎比较长，但如果平时的训练足够充分的话，是可以很快反应出来的，这也是我们为什么主张要多进行语言输入训练的原因，而不是一味地强调找外教“多说多练”，磨刀不误砍柴工，就是这个道理。其二，就上面这个例子来说，不管用了多长时间思考，如果这个学习者最后成功地想到并用上了 blame 这个词，我相信他是一辈子也不会忘记的，就像骑自行车，一旦学会，永世不忘。</p>
+<p>所以，从这个意义上讲，我们在训练学员进行语言输出的时候，需要给学员一个这样的阶段，就是让学员放慢速度来说，边想边说，或者干脆给足他们时间，让他们想清楚了再说。以前学英语的人都有过这样的体会，上课的时候笔记记了一大本，当时感觉很有用，一旦轮到自己说的时候，就只图流利，还是用之前早就习惯用的那些词，而忘记把新学的用上去了。这是一种浪费。</p>
+<p>车灯很刺眼</p>
+<p>为了进一步说明词汇分类对口语表达的积极作用，我再举一个形容词的例子。比如说，晚上开车的时候你经常会看到一些人不顾别人的感受开着大灯，“车灯很刺眼”，你想用英语表达这么一个意思。当然，如果你的词汇量够丰富，马上能想到用 dazzling 这个词最好，但如果你不知道这个词，就得想办法用我们万能的 R 词汇表来解决问题。</p>
+<p>在我们的训练中，你的第一反应，或者是潜意识里的第一反应就应该是，这是一个形象词汇，也就是实心词，因为关于光线这么具体的东西是不需要抽象的啦！其次是，这是一个关于强度的词。在我们的形容词分类中，表达强度的词一共有两类，分别如下：</p>
+<p>表达硬度的：hard firm soft tough tender</p>
+<p>表达力量的：strong weak</p>
+<p>去掉 soft, tender, weak 这几个表达相反词义的，很明显我们只能从 hard, firm, tough, strong 这四个词中选。而 hard 和 firm 指不容易变形，tough 侧重于嚼不动，只有 strong 最合适。所以，这句话你就可以说成：The light is very strong.</p>
+<p>当然，实际的反应过程也许没有这么复杂，可能我们在教 strong 这个词的时候就已经把 strong light 这个搭配一起教给大家了，因为 light 是在我们名词中的一个重要分类的成员，早就在给单词联姻的时候就已经把它们牵线搭桥到一块了。其他还有 wind, leader, evidence, support 等从不同家族里走出来向它求婚的名词。这个例子也进一步说明，给词汇进行科学分类是多么重要。</p>
+<h4 id="_15">（三）能轻松搞定以前不会表达的东西</h4>
+<p>上一个章节告诉了大家超出 R 词汇表的那些词汇可以通过四大技巧来解决，事实上，即使是在 R 词汇表范围之内，我们也有很多东西并没有真正掌握。而这些东西都是我们以前感觉很难，但实际上可以用 R 词汇表中的词不加任何修饰地轻松解决的问题。</p>
+<p>举几个例子说明一下吧！请大家用自己掌握的英语表达以下几句话。</p>
+<p>我把脚脖子扭了。</p>
+<p>挪过去一点，给她腾出位子来。</p>
+<p>这辆车的抓地力很好。</p>
+<p>我的工作有一定的危险性。</p>
+<p>觉得难吗？</p>
+<p>“扭”“腾”“抓地”“危险性”，这些是不是些很高深的新词？当然不是，你已经了解我了，高深的东西不在这儿教你。其实它们都是我们最熟悉不过的一些词：turn, make, hold, part。就是这四个词，连小学生都认识。分别表达如下：</p>
+<p><em>I turned my ankle.</em></p>
+<p><em>Move over, make room for her.</em></p>
+<p><em>This car holds the ground very well.</em></p>
+<p><em>Danger is part of my job.</em></p>
+<p>具体我就不分析了。我想说的是，这些看上去很土气的基础词汇，除了能通过四大技巧上天揽月、下海捉鳖外，其本身就是一个能土能洋、能上能下、能文能武的变形金刚。</p>
+<p>拿 make 这个词来说，不仅仅可以用来表达 made in China（中国制造），还几乎可以和除了属性词之外的所有名词类型的词进行搭配，无论是吃的、穿的、住的、用的，还是时间、空间、声音，无论是具体事物还是抽象事物，无论是动物、植物还是细菌，甚至包括人都可以 make。可以简单地用一句话来概括：</p>
+<p>Everything can be made！</p>
+<p>为啥能这样？卖个关子，请继续往下看。这不是一个简单的词汇搭配的问题，而是哲学问题，甚至是关系到这个世界的终极问题。</p>
+<p>有的同学可能还是憋不住要问：你刚才说的属性词又是指什么？又是何方神圣？</p>
+<p>还问？往下看！</p>
+<h3 id="_16">好处二，好懂好记好用</h3>
+<p>这 1368 个词大部分是非常形象的词汇，都是关于那些我们能看得见、摸得着或者感觉得到的事物，我们在生活中每天都会体验到这些东西，自然很容易理解和记忆。就像前面举过的那个例子，size 和 seriousness 两个词都可以表达严重性，前一个既形象又简单，我们为什么不先学用前面这个词呢？何况它的词义和用法更多。</p>
+<p>R 词汇表中约有四分之三的词是形象词汇，这与我们通常见到的其他的类似四六级词汇表、雅思词汇表、托福词汇表中以抽象词汇为主有着很大的区别。单从口语表达这个目标来说，毫无疑问，我们的 R 词汇表学习起来更简单。</p>
+<p>为了说明口语表达是完全可以做到用形象词汇来实现的，我再拿美国著名演员 Jimmy Durante（吉米·杜兰特）说过的一句话做例子：</p>
+<p><em>Be kind to the people on the way up, and you will meet them again on your way down.</em></p>
+<p>这句话即使不解释我相信你们也能看懂，因为太简单了。但意思却并不简单：</p>
+<p>春风得意时要对人好一点，因为当你失意的时候还会见到他们。</p>
+<p>“得意”“失意”在汉语中原本是两个抽象的概念，在英语中很轻松地用 the way up, the way down 给解决了，非常形象。</p>
+<h3 id="_17">好处三，进阶的必由之路</h3>
+<p>前面说过，新的词汇都是在原有词汇的基础上添加一些新的内容生成的，所有的高级词汇都可以用基础词汇来解释。这个特点有助于我们准确掌握新学词汇的词义，以及意思相近的词汇之间的根本区别。</p>
+<p>举例来说，overwhelm 这个词，一般的中英词典只能解释为“压倒、征服”。但如果仅仅这样理解就很难准确把握下面这个句子的意思：</p>
+<p><em>She was overwhelmed by feelings of guilt.</em></p>
+<p>啥意思呢？我知道 guilt 是“内疚”的意思，feelings of guilt 就是“内疚之情”，但整句话是什么意思呢？是说她被内疚征服了？压倒了？讲不通啊！这时候，如果你查的是英英词典，那你的问题就迎刃而解了，牛津词典中对 overwhelm 在这个义项上的解释是：</p>
+<p><em>to have such a strong emotional effect on somebody that it is difficult for them to know how to react.</em></p>
+<p>明白了吗？是说某种感情太强烈，以至于当事人不知所措。所以，这句话准确的理解应该就是：</p>
+<p>她羞愧难当，不知所措。</p>
+<p>而这个解释用的都是 R 词汇表中的基础词汇，你很容易就能理解。</p>
+<p>再举个例子，launder 这个词，除了指洗衣服之外，还可以表示“洗钱”这个意思。事实上，很多人并不知道这个词的确切含义，即使是对中文的“洗钱”到底是如何洗也不甚了了。很简单，查查英英词典一下子就清楚了。朗文词典的解释是：</p>
+<p><em>to put money that has been obtained illegally into legal businesses and bank accounts, so that you can hide it or use it.</em></p>
+<p>意思一目了然，就是说把非法所得的钱投入到合法的企业或银行账户中去，这样你就可以正大光明地用啦！所以，学英语的好处之一就是你也知道如何洗钱啦！嘿嘿，开个玩笑。</p>
+<p>基础词汇释义还可以帮我们区分一些容易混淆的词之间的区别。举个例子，很多学生会把 fault 和 mistake 两个词混用，因为我们既可以说 that‘s your fault，也可以说 that’s your mistake，而且都当“错误”讲。但是如果我们查查词典的话，就会发现两个词完全不是一回事，它们就不是一个家族的。牛津词典对这两个词的解释分别是：</p>
+<p>fault：the responsibility for something wrong that has happened or been done</p>
+<p>mistake：an action or an opinion that is not correct</p>
+<p>很明显，fault 是一种责任，而 mistake 是一种不正确的言行。也就是说，fault 是犯错的责任，但不是错误本身。</p>
+<p>除了可以帮助准确理解词义外，还可以进一步帮我们理解为什么有的词可以与这个词搭配，而有的词则不行。还是拿刚才的 fault 和 mistake 来说，既然 fault 是一种责任，我们就可以说 take the fault（承担责任），但却不能说 take the mistake。反过来也一样，可以说 make the mistake（犯错），但不能说 make the fault。</p>
+<p>同样地，健康这个词在英语中是 health。在我们汉语中可以说拥有健康、失去健康，但在英语中就不能想当然地直接搭配成 possess health 或 lose health，因为它在词典中的解释是这样的：</p>
+<p><em>the condition of a persons body or mind</em></p>
+<p>很明显，health 是一种 condition，“状况”的意思。既然是状况，可以分好坏，也可以提高或损坏，但怎么可以拥有或失去呢？所以，我们可以说的是 good or bad health，或者是 improve or damage your health，但就是不可以说 possess or lose health。</p>
+<h3 id="_18">好处四，学到真正的口语</h3>
+<p>在四年的教学实践中，喜欢用书面化的词汇说口语是学员最突出的问题之一。先举两个教学中的实际案例给大家看一下。</p>
+<p>在我们的思维训练中，有一个练习是让学员从门户网站上随机抽取一个社会新闻，然后把它的标题用口语化的英语讲给大家听，看看其他学员能否听得懂。因为这些社会新闻都是发生在我们身边的事情，所以能不能把它们讲清楚，直接反映了学员的口语运用能力。其中有一个新闻的标题是这样的：</p>
+<p>患癌女孩被父母、男友遗弃后去世</p>
+<p>如果是在正式的新闻报道中，“遗弃”这个词是会用 abandon 的，但我们并不希望学员用这个词，因为它不是口语词汇。在朗文词典中，明确地标明它是 2000 个最常用的书面语词汇之一。测试的实际结果是，词汇量较大的学员，或者是知道这个词的学员，几乎无一例外用了这个词，而不是像我们所希望的那样用 leave 这个词。</p>
+<p>再举另一个例子，练习中有这样一句话，也是要求学员用口语表达：</p>
+<p>他被判了五年刑。</p>
+<p>同样的结果，要么是不会说，要么就会用 sentence 这个新闻报道中经常用到的正式词汇，说成：</p>
+<p><em>He was sentenced to 5 years in prison.</em></p>
+<p>sentence 在中英词典中当动词用的时候就是“宣判”的意思，所以，学员很容易就直接找到这个词。但我们这个练习的目的却是希望他们用 give 这个词，表达为：</p>
+<p><em>He was given 5 years in prison.</em></p>
+<p>或者用 get 表达为：</p>
+<p><em>He got 5 years in prison.</em></p>
+<p>以上两个练习中，没有哪个学员不知道 leave, give 和 get 这些基础词汇，但就是想不到用。</p>
+<p>这儿只是举了两个例子，在整个教学过程中类似的书面化表达比比皆是。最突出的一点是，学员对动词短语的掌握非常不够。下面就罗列一些给大家看，前一个词是书面的，后一个词是口语的：</p>
+<p>要求：request ask for</p>
+<p>报复：revenge get back on</p>
+<p>调查：investigate look into</p>
+<p>合作：cooperate work together</p>
+<p>取出：withdraw take out</p>
+<p>建立：establish set up</p>
+<p>削减：decrease cut down</p>
+<p>组装：assemble put together</p>
+<p>拒绝：reject turn down</p>
+<p>归还：return give back</p>
+<p>加速：accelerate speed up</p>
+<p>用书面语表达你不能说不对，这么说出来人们也能理解，但是在日常的口语交流中，你真的很少会听到老外用这么正式的词汇进行表达，就像我们在生活中说的汉语也更加口语化一样。要是你经常跟家人或朋友说文言文或者时不时地来个成语，你一定会被人骂：“拽什么拽啊，酸死了！”英语也是同样的道理，你在美剧中就很少看到男女主角用播新闻的方式说话。</p>
+<p>不过严格来说，倾向于用书面词汇也不是学员喜欢不喜欢的问题，而是由两方面客观原因导致了这个结果。其一，我们传统的英语教学在听说读写四个技巧中更加注重读和写的能力，虽然最近几年加强了对听力能力的提升，但说的方面还是一个传统弱项。读和写，主要就是用书面语。所以过了四六级的学员大多背诵了很多的书面语词汇，而对口语词汇的练习却严重不足。其二，英语和汉语词汇的形成原理不同，一个是综合性的，另一个是分析性的，这造成它们之间并不是一一对应的关系。这是一个专业的结论，在此不做详细说明，但在后面的章节你们会进一步了解两种语言的差别。</p>
+<p>原因说完了，接下来我们来说明为什么通过 R 词汇表可以解决这个问题。</p>
+<p>首先一点就是，前面说过了，这个表收录的大部分是口语词汇，我们所有的教材和练习都是围绕着这些口语词汇设计的。也就是说，我们要求学员必须用这些词汇来表达，不得超出 R 词汇表。这就逼着学员把他们的选择限制在词汇表范围之内，通过反复训练，自然而然地，他们对这些口语化词汇就会越来越熟悉，一直到能够驾轻就熟，灵活运用。</p>
+<p>其次，仅仅要求学习者用这些词汇还不够，还要教他们如何用。除了前面所讲过的四大技巧之外，我们还要培养学员的英语思维能力，只有掌握了典型的英语思维模式，才能真正把这些口语化的词汇用熟、用透。而这些思维模式是需要针对性的训练才能逐渐掌握的，这一点将在下面这个章节进行论述。</p>
+<h3 id="_19">好处五，学会用英语思维</h3>
+<p>关于中英两种语言在思维上的差别，我曾在上一本书《英语思维是这样炼成的》中有过专门的论述。实际上，也没有必要把英语思维看得那么高深。说白了，除了拼写和发音外，只要是英语和中文在使用上不一致的地方，都可以称之为“英语思维”。</p>
+<p>为了让大家充分理解英语和中文之间确实存在着这样的差别，这种不是靠背单词就能解决问题的差别，我举一个典型的例子给大家体会一下。</p>
+<p>请大家先尝试着用英语表达这样一个意思：</p>
+<p>生孩子是两个人的事。</p>
+<p>为了更加明确这句话想表达的意思，我再具体说明一下，比如说，你妈天天催着你给她生个孙子或孙女，但您那位呢，却推三阻四不着急。于是，你就跟你妈说了这句话：生孩子是两个人的事，他（她）不急，我有什么办法？</p>
+<p>现在明白了吗？好，尝试一下吧！你会怎么说？</p>
+<p>别急着找答案，你一定要用自己现有的水平尝试一下，不然对此体会不深。</p>
+<p>当然，可以用很多方式表达同样的意思，我在这里指的是那种最能体现英语思维的方式。不是吹牛，就是英语专业的人，也未必能以很地道的方式说出这句话来。不信就试试！</p>
+<p>答案在另一页，请一定要自己尝试了之后再看。</p>
+<p>好的，这句我认为最能体现英语思维的表达方式是：</p>
+<p><em>It takes two to make a baby.</em></p>
+<p>连冠词 a 算上，一共七个单词。我们先不谈别的，你的表达比这个长吗？用的词多吗？</p>
+<p>这句话一个小学生都能看懂，你的那句小学生能看懂吗？</p>
+<p>我在学习英语者中做过测试，无论是高水平还是非常高的水平，流利还是非常流利，能够以这种方式表达出来的寥寥无几。为什么呢？</p>
+<p>这句话看上去虽然简单，却至少体现了三种典型的英语思维。</p>
+<p>一是 it 的用法。</p>
+<p>其实我们上学时都做过很多 it 句型的练习，但那是应试，一旦到了实战阶段，很多人就反应不过来了。在我们的培训中，it 句型是作为一种思维模式单独训练的。在我们的教学大纲中，它是有效地解决主语问题的方法之一。</p>
+<p>二是 take 的用法。</p>
+<p>take 在口语中的战斗力实在太强了，相当于 AK47 步枪，而我们的学生基本上是把它当菜刀使。你要说 it takes sometime to do something（花费某一时间做某事）我们的学生熟，但要说 it takes two people to do something（让两个人做某事）估计连想都没想过。这就是把单词给学死了。</p>
+<p>三是 make 的用法。</p>
+<p>前面已经说过了，make 这个词无所不能，“吃的、穿的、用的、住的，连人都可以 make”就是这个意思。生孩子不就是“造人”吗？汉语中我们也天天说，为什么到了这儿就不会用了呢？</p>
+<p>下面我再列出几个典型的句子来，让大家进一步体会两种语言在思维方式上的差别。我先列出汉语来，有兴趣的朋友可以自己先表达一下，然后再对照参考答案看看有什么区别，如果你的表达和参考答案基本一致，恭喜你，你的英语已经很棒了，例如：</p>
+<p>这个职位是配车的。</p>
+<p>刚才我们说到哪儿了？</p>
+<p>证据对他不利。</p>
+<p>我昨天上班迟到了。</p>
+<p>我的演讲被压缩到六分钟。</p>
+<p>通常情况下，我们会表达成这个样子：</p>
+<p><em>There's a car for you if you get this job.</em></p>
+<p><em>What did we just talk about?</em></p>
+<p><em>The evidence doesn't benefit him.</em></p>
+<p><em>I was late when I went to work yesterday.</em></p>
+<p><em>My speech was reduced to six minutes.</em></p>
+<p>而比较地道的表达应该是下面这样的：</p>
+<p><em>A car goes with this job.</em></p>
+<p><em>Where were we?</em></p>
+<p><em>The evidence is against him.</em></p>
+<p><em>I was late for work yesterday.</em></p>
+<p><em>My speech was cut to six minutes.</em></p>
+<p>大家比较一下，与自己的表达差距在哪里？其实，这里表达所用的词汇都非常简单，我们都很熟悉，只是我们就是想不到从这些角度，用这些词来表达，这就是思维的差别所造成的，与词汇量无关。</p>
+<p>具体来说，以上五句话分别从五个方面体现了英语与汉语的差别：</p>
+<p>一、汉语习惯以人做主语，英语经常会用物做主语；</p>
+<p>二、汉语强调动作，英语强调方位；</p>
+<p>三、汉语中的动词在英语中经常被介词来代替；</p>
+<p>四、英语的语序是先说主谓后说其他成分，汉语经常把其他成分放在谓语前面；</p>
+<p>五、英语口语中形象词汇用得比较多。</p>
+<p>既然英语和汉语在思维模式上存在着比较大的差别，那么掌握英语思维模式对我们学习这门语言的具体作用体现在哪里呢？主要是有三个方面：</p>
+<p>第一，掌握英语思维模式可以让我们的英语说得更加地道。</p>
+<p>以上几个例子都说明了这一点，与我们的表达相比，地道的英语用词更加形象、简洁，而我们的表达会多少显得拖沓。</p>
+<p>第二，掌握英语思维可以避免中式英语。</p>
+<p>所谓“中式英语”其实就是指在汉语的思维模式下说出来的英语，有很多都是从中文直接翻译过来所造成的。举例来说，我们要表达“别忘了把书还回去”，很多学习者就会想当然地表达为：</p>
+<p><em>Don't forget to return the book back.</em></p>
+<p>其实在这里 back 一词是多余的，因为 return 本身就是 give back 的意思，已经有了 back 的含义，就没有必要多此一举了。造成这个问题的主要原因是不了解 return 这个词所内含的结构。英语中有大量类似的词，如 dress，本身就是 put on clothes 的意思，所以你只要说 dress up 或者 dress somebody 就可以，没必要说成 dress clothes。</p>
+<p>再举个例子，你在教孩子打篮球，告诉他“把球扔进篮筐”，大多数学生会把它说成：</p>
+<p><em>Throw the ball into the basket.</em></p>
+<p>其他词都没问题，只有 into 这个词用错了，应该换成 through。因为篮筐是空心的，球进去之后肯定还要出来，球只是穿过而已，所以只能是 through 而不是 into。这个错误主要是受汉语的影响，另外，也是因为我们对英语中介词的用法掌握不够造成的。</p>
+<p>第三，掌握英语思维是有效提升口语水平的前提</p>
+<p>经常碰到一些英语已经说得很流利的人说想把英语说得和 native speaker 一样地道，但就是不得其法，或者说进步非常慢。主要原因在于：虽然他们的英语说得很流利，但大多数时候并没有按照英语的思维模式来组织语言；虽然能够沟通，但听上去会比较别扭，或者是比较吃力。比如说，工作中我们想说这样一句话：</p>
+<p>我的提案描述了一个既能削减预算又能保持功能的方法。</p>
+<p>这句话通常情况下会被表达成下面这个样子：</p>
+<p><em>My proposal describes a way to cut the budget and keep the functions.</em></p>
+<p>这样表达不能说不对，但是听上去会比较别扭，因为该强调的东西没有强调出来。如果用下面的句子表达出来，感觉就不一样了：</p>
+<p><em>My proposal describes a way to cut the budget without losing the functions.</em></p>
+<p>问题就在于，前者欠缺了一种典型的英语思维能力，就是转换角度，只是按照中文的习惯来表达。这一点我们在前面已经讲过，keep something 就是 without losing something，虽然意思相近，但后者却能明显感觉到强调的语气。</p>
+<p>更关键的问题是，这一类学员已经养成了自己的思维定式，想要改过来就会比较难。这就好比打乒乓球，因为小时候教的姿势不对——顺拐，长大了想改就比较难一些。就像我前面举过的关于“遗弃”这个词表达的例子，一直习惯了用 abandon，就想不到用 leave 这个更简单的词了。</p>
+<p>所以，我们一定要在学口语的初期就把思维方式掌握好，这就好比练武要练功，底子打好了，想练啥拳都可以。要是底子打不好，就像古话所说的，“练武不练功，到老一场空”啊！</p>
+<p>看来，学语言也有生活的哲理啊！</p>
+<p>既然英语思维这么重要，那么我们就要想办法把它学会。回到 R 词汇表这个主题上来，最快学习英语思维的方式，就是首先学习并掌握表中的基础词汇。就因为它们是基础词汇，是最早一批发明的词汇，所以才最能体现英语思维的特点，这个我想是毋庸置疑的。那么，具体要如何通过基础词汇的学习来掌握典型的英语思维模式？请大家继续看下面的章节。</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2019-2023 idlewith <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19052369号-3</a>
+</div>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/idlewith/blog" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</a>
+<a class="md-social__link" href="mailto:newellzhou@163.com" rel="noopener" target="_blank" title="">
+<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.tabs", "search.highlight", "search.share", "search.suggest", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+</body>
+</html>
