@@ -17,7 +17,7 @@ $PyInterpreterDirectory$\black.exe
 Arguments
 
 ```
---line-length 79 $FilePath$
+--line-length 79 --preview $FilePath$
 ```
 
 Working directory
