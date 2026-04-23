@@ -18,7 +18,7 @@ $PyInterpreterDirectory$/mf.exe
 Arguments
 
 ```
--i $FilePath$ -m utils -a
+-i $FilePath$ -m utils -a -f
 ```
 
 Working directory
