@@ -367,7 +367,7 @@ https://www.apple.com.cn/shop/product/MK122CH/A
 ## set mouse spped
 
 ```bash
-defaults write -g com.apple.mouse.scaling 18
+defaults write -g com.apple.mouse.scaling -1
 ```
 
 wheel speed
